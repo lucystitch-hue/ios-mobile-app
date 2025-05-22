@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServiceImageCell" rowHeight="134" id="KGk-i7-Jjw" customClass="ServiceImageCell" customModule="IMT_iOS_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="490" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_beginner" translatesAutoresizingMaskIntoConstraints="NO" id="d6o-aN-xHT">
+                        <rect key="frame" x="0.0" y="0.0" width="490" height="134"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d6o-aN-xHT" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Gaa-AC-f2p"/>
+                    <constraint firstItem="d6o-aN-xHT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Jyi-4l-nUD"/>
+                    <constraint firstItem="d6o-aN-xHT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Rtw-12-R5A"/>
+                    <constraint firstItem="d6o-aN-xHT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fie-7I-rbt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imvBackgound" destination="d6o-aN-xHT" id="TCt-ol-8jb"/>
+            </connections>
+            <point key="canvasLocation" x="-435.1145038167939" y="-61.971830985915496"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_beginner" width="227" height="51.666667938232422"/>
+    </resources>
+</document>

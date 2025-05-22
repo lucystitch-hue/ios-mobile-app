@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RaceVC" customModule="IMT_TEST" customModuleProvider="target">
+            <connections>
+                <outlet property="stvContentView" destination="xGE-cT-AIB" id="nPE-Q7-Uyy"/>
+                <outlet property="stvMainContent" destination="t4u-M0-lEg" id="rx6-1K-HPV"/>
+                <outlet property="tbvTraniningRace" destination="3xZ-Yc-U1C" id="3xz-KF-Wg7"/>
+                <outlet property="vContent" destination="N8e-cT-sIz" id="CdE-kv-EKW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8e-cT-sIz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xGE-cT-AIB">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t4u-M0-lEg">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_raceYoutube" translatesAutoresizingMaskIntoConstraints="NO" id="oOu-LQ-zbu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="90" id="NxU-XR-LDf"/>
+                                            </constraints>
+                                        </imageView>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3xZ-Yc-U1C">
+                                            <rect key="frame" x="15" y="100" width="345" height="712"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadownViewLogin" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </tableView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3xZ-Yc-U1C" firstAttribute="centerX" secondItem="t4u-M0-lEg" secondAttribute="centerX" id="acj-yg-W1R"/>
+                                        <constraint firstItem="3xZ-Yc-U1C" firstAttribute="leading" secondItem="t4u-M0-lEg" secondAttribute="leading" constant="15" id="dc4-sS-e8S"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="xGE-cT-AIB" firstAttribute="leading" secondItem="N8e-cT-sIz" secondAttribute="leading" id="3Ce-S0-MIz"/>
+                        <constraint firstAttribute="trailing" secondItem="xGE-cT-AIB" secondAttribute="trailing" id="9ME-XI-ml2"/>
+                        <constraint firstAttribute="bottom" secondItem="xGE-cT-AIB" secondAttribute="bottom" id="Rjy-cB-39z"/>
+                        <constraint firstItem="xGE-cT-AIB" firstAttribute="top" secondItem="N8e-cT-sIz" secondAttribute="top" id="nIF-8d-oid"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="N8e-cT-sIz" secondAttribute="trailing" id="2su-gY-XbK"/>
+                <constraint firstItem="N8e-cT-sIz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="98X-lJ-jiM"/>
+                <constraint firstAttribute="bottom" secondItem="N8e-cT-sIz" secondAttribute="bottom" id="E1c-Pz-f2K"/>
+                <constraint firstItem="N8e-cT-sIz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zSw-pT-QCz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="27" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_raceYoutube" width="424.66665649414062" height="95.666664123535156"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

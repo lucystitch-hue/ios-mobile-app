@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W5.ttc">
+            <string>HiraginoSans-W5</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopicCell" rowHeight="102" id="KGk-i7-Jjw" customClass="TopicCell" customModule="IMT_TEST" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="157"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="157"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2/18(土)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdm-ed-ODx" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                        <rect key="frame" x="75" y="71.666666666666671" width="64.666666666666686" height="14"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boldWeight" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="normalSize" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" text="ダイヤモンドSダイヤモンド" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsi-He-bAm" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                        <rect key="frame" x="150.66666666666669" y="5" width="150.66666666666669" height="147"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W5" family="Hiragino Sans" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boldWeight" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="smallSize" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="semiBoldWeight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rag-q2-k0f">
+                        <rect key="frame" x="312.33333333333331" y="70.666666666666671" width="17.333333333333314" height="16"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFB-kz-tle" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                <rect key="frame" x="3.0000000000000009" y="3" width="11.333333333333336" height="10"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="9"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="tinySize" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="boldWeight" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27058823529411763" green="0.63529411764705879" blue="0.18823529411764706" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FFB-kz-tle" secondAttribute="trailing" constant="3" id="C3P-mw-LKB"/>
+                            <constraint firstAttribute="bottom" secondItem="FFB-kz-tle" secondAttribute="bottom" constant="3" id="bnW-Sb-ddp"/>
+                            <constraint firstItem="FFB-kz-tle" firstAttribute="top" secondItem="rag-q2-k0f" secondAttribute="top" constant="3" id="uU6-RU-BgT"/>
+                            <constraint firstItem="FFB-kz-tle" firstAttribute="leading" secondItem="rag-q2-k0f" secondAttribute="leading" constant="3" id="wtV-TA-ceK"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgK-oN-t6t">
+                        <rect key="frame" x="20" y="68.666666666666671" width="44" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GI" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXK-US-maw" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                <rect key="frame" x="3" y="3" width="38" height="14"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="9"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="tinySize" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="boldWeight" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="mediumWeight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="normalSize" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27058823529999998" green="0.63529411759999999" blue="0.18823529410000001" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cXK-US-maw" secondAttribute="bottom" constant="3" id="BXa-Lb-ETX"/>
+                            <constraint firstItem="cXK-US-maw" firstAttribute="top" secondItem="rgK-oN-t6t" secondAttribute="top" constant="3" id="E6G-GA-U6H"/>
+                            <constraint firstAttribute="width" constant="44" id="QV2-tl-Lz4"/>
+                            <constraint firstAttribute="trailing" secondItem="cXK-US-maw" secondAttribute="trailing" constant="3" id="bZu-RB-P2I"/>
+                            <constraint firstItem="cXK-US-maw" firstAttribute="leading" secondItem="rgK-oN-t6t" secondAttribute="leading" constant="3" id="weI-PR-Ead"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rag-q2-k0f" secondAttribute="trailing" constant="20" id="0In-PO-7Ud"/>
+                    <constraint firstItem="rag-q2-k0f" firstAttribute="leading" secondItem="lsi-He-bAm" secondAttribute="trailing" constant="11" id="BMn-m3-cpF"/>
+                    <constraint firstItem="lsi-He-bAm" firstAttribute="leading" secondItem="Fdm-ed-ODx" secondAttribute="trailing" constant="11" id="GTV-Bk-xpU"/>
+                    <constraint firstItem="rgK-oN-t6t" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IRu-8v-VrO"/>
+                    <constraint firstItem="rag-q2-k0f" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZTM-Iw-n6z"/>
+                    <constraint firstItem="rgK-oN-t6t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="dL6-aA-vov"/>
+                    <constraint firstItem="lsi-He-bAm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="nwS-Ew-v5M"/>
+                    <constraint firstItem="Fdm-ed-ODx" firstAttribute="leading" secondItem="rgK-oN-t6t" secondAttribute="trailing" constant="11" id="qNM-09-TCY"/>
+                    <constraint firstItem="Fdm-ed-ODx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="r8a-b8-gwP"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rgK-oN-t6t" secondAttribute="bottom" constant="5" id="xbD-s8-etb"/>
+                    <constraint firstAttribute="bottom" secondItem="lsi-He-bAm" secondAttribute="bottom" constant="5" id="yJ7-b8-EnO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbDate" destination="Fdm-ed-ODx" id="APt-g7-I7x"/>
+                <outlet property="lbGrade" destination="FFB-kz-tle" id="XSM-rf-ywM"/>
+                <outlet property="lbName" destination="lsi-He-bAm" id="vIS-AA-rLe"/>
+                <outlet property="lblPlace" destination="cXK-US-maw" id="mne-cO-zvq"/>
+                <outlet property="vBackgroundGrade" destination="rag-q2-k0f" id="xbn-zy-y2p"/>
+                <outlet property="vBackgroundPlace" destination="rgK-oN-t6t" id="x6m-8z-Jto"/>
+            </connections>
+            <point key="canvasLocation" x="-3395.419847328244" y="70.070422535211264"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="FFB-kz-tle">
+            <size key="intrinsicContentSize" width="11.333333333333334" height="10"/>
+        </designable>
+        <designable name="Fdm-ed-ODx">
+            <size key="intrinsicContentSize" width="64.666666666666671" height="14"/>
+        </designable>
+        <designable name="cXK-US-maw">
+            <size key="intrinsicContentSize" width="15" height="14"/>
+        </designable>
+        <designable name="lsi-He-bAm">
+            <size key="intrinsicContentSize" width="150.66666666666666" height="12"/>
+        </designable>
+    </designables>
+</document>

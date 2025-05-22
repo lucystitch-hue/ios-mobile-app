@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IMTCheckboxCell" rowHeight="72" id="KGk-i7-Jjw" customClass="IMTCheckboxCell" customModule="IMT_TEST" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5ZZ-Sy-U5D">
+                        <rect key="frame" x="1" y="0.0" width="348" height="72"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QCm-nO-d8o">
+                                <rect key="frame" x="0.0" y="0.0" width="348" height="62"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-KQ-PWf">
+                                        <rect key="frame" x="0.0" y="21" width="30" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_checkbox_bold_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="yaW-DA-NIu">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="yaW-DA-NIu" secondAttribute="height" id="l4h-Dg-dCM"/>
+                                                    <constraint firstAttribute="height" constant="20" id="lIb-St-eFt"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="yaW-DA-NIu" firstAttribute="leading" secondItem="xp7-KQ-PWf" secondAttribute="leading" id="8hE-rW-pVX"/>
+                                            <constraint firstItem="yaW-DA-NIu" firstAttribute="top" secondItem="xp7-KQ-PWf" secondAttribute="top" id="HDo-Xl-Fnv"/>
+                                            <constraint firstItem="yaW-DA-NIu" firstAttribute="centerY" secondItem="xp7-KQ-PWf" secondAttribute="centerY" id="a6D-cT-N01"/>
+                                            <constraint firstAttribute="width" constant="30" id="fVe-F1-k8u"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="選択肢" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jC7-9Y-g01">
+                                        <rect key="frame" x="30" y="24" width="318" height="14"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wF-vd-ChE">
+                                <rect key="frame" x="0.0" y="62" width="348" height="10"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="cOo-ny-TaV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXP-yb-dRj">
+                        <rect key="frame" x="0.0" y="1" width="350" height="70"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="15"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="actionCheck:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HGF-kH-Gem"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iXP-yb-dRj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="2UK-7h-aeN"/>
+                    <constraint firstAttribute="bottom" secondItem="5ZZ-Sy-U5D" secondAttribute="bottom" id="2rO-lq-6GF"/>
+                    <constraint firstItem="iXP-yb-dRj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2xO-a0-zWj"/>
+                    <constraint firstItem="5ZZ-Sy-U5D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="S2y-ur-Nlb"/>
+                    <constraint firstAttribute="bottom" secondItem="5ZZ-Sy-U5D" secondAttribute="bottom" id="cam-JG-fSQ"/>
+                    <constraint firstAttribute="trailing" secondItem="5ZZ-Sy-U5D" secondAttribute="trailing" constant="1" id="nnj-0v-gg7"/>
+                    <constraint firstItem="5ZZ-Sy-U5D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="pAK-9h-F60"/>
+                    <constraint firstItem="5ZZ-Sy-U5D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pOl-wy-waC"/>
+                    <constraint firstItem="iXP-yb-dRj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rQ7-hd-2nm"/>
+                    <constraint firstItem="iXP-yb-dRj" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="znf-Fw-cUF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cstHeightSpace" destination="cOo-ny-TaV" id="rYr-ME-4Gf"/>
+                <outlet property="imvCheck" destination="yaW-DA-NIu" id="oWq-u2-Ljo"/>
+                <outlet property="lblLabel" destination="jC7-9Y-g01" id="kpc-xQ-IdU"/>
+            </connections>
+            <point key="canvasLocation" x="277.86259541984731" y="-4.2253521126760569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_checkbox_bold_unselected" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

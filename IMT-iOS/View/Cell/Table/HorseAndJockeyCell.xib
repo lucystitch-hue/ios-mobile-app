@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="HorseAndJockeyCell" customModule="IMT_TEST" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="517" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="517" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8uQ-OT-vhk">
+                        <rect key="frame" x="20" y="15" width="487" height="41"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_unselect_radio_button" translatesAutoresizingMaskIntoConstraints="NO" id="XUV-vW-Lc6">
+                                <rect key="frame" x="-20" y="10.666666666666668" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Ajl-cN-GKq"/>
+                                    <constraint firstAttribute="width" secondItem="XUV-vW-Lc6" secondAttribute="height" multiplier="1:1" id="ozx-T6-M2I"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39D-ju-AVI">
+                                <rect key="frame" x="0.0" y="0.0" width="487" height="41"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dG5-rv-wm4">
+                                        <rect key="frame" x="0.0" y="0.0" width="487" height="41"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="ジャスティンカフェ " textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMC-ig-WsB">
+                                                <rect key="frame" x="0.0" y="12.666666666666668" width="168.66666666666666" height="16"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="せん4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yf-hU-Ow4">
+                                                <rect key="frame" x="168.66666666666666" y="14.666666666666668" width="32.666666666666657" height="12"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="z6l-gX-GNJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                                                <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7s7-zi-DzF">
+                                                <rect key="frame" x="201.33333333333334" y="0.0" width="285.66666666666663" height="41"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dG5-rv-wm4" firstAttribute="top" secondItem="39D-ju-AVI" secondAttribute="top" id="BMA-no-Daj"/>
+                                    <constraint firstItem="dG5-rv-wm4" firstAttribute="leading" secondItem="39D-ju-AVI" secondAttribute="leading" id="HF6-fo-NZ5"/>
+                                    <constraint firstAttribute="trailing" secondItem="dG5-rv-wm4" secondAttribute="trailing" id="SGn-Ma-uJu"/>
+                                    <constraint firstAttribute="bottom" secondItem="dG5-rv-wm4" secondAttribute="bottom" id="kFU-mY-JaS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8uQ-OT-vhk" secondAttribute="bottom" constant="15" id="Fr5-gY-Wng"/>
+                    <constraint firstAttribute="trailing" secondItem="8uQ-OT-vhk" secondAttribute="trailing" constant="10" id="KKv-oh-mJp"/>
+                    <constraint firstItem="8uQ-OT-vhk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="XZN-Kc-WHW"/>
+                    <constraint firstItem="8uQ-OT-vhk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="tAj-pM-Uo1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cstLeft" destination="HF6-fo-NZ5" id="aym-6g-DJ5"/>
+                <outlet property="imgRadioButton" destination="XUV-vW-Lc6" id="FQw-GA-hli"/>
+                <outlet property="lbSex" destination="3yf-hU-Ow4" id="jtN-CK-a7G"/>
+                <outlet property="lbTitle" destination="bMC-ig-WsB" id="Oad-kj-8l3"/>
+                <outlet property="stackView" destination="7s7-zi-DzF" id="EVd-Au-dwp"/>
+            </connections>
+            <point key="canvasLocation" x="-48.091603053435115" y="29.225352112676056"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_unselect_radio_button" width="35" height="35"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

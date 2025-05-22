@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CheckBoxView" customModule="IMT_TEST" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="138"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qcj-HQ-zVK">
+                    <rect key="frame" x="1" y="60" width="391" height="43"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zwu-v4-uU8">
+                            <rect key="frame" x="0.0" y="0.0" width="391" height="43"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCx-Cf-fvR">
+                                    <rect key="frame" x="0.0" y="11.666666666666671" width="30" height="20"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="PVa-5k-kk4">
+                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="PVa-5k-kk4" secondAttribute="height" id="3K3-ie-sDq"/>
+                                                <constraint firstAttribute="height" constant="20" id="tv2-yW-wH4"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="PVa-5k-kk4" firstAttribute="top" secondItem="fCx-Cf-fvR" secondAttribute="top" id="C73-rs-rag"/>
+                                        <constraint firstItem="PVa-5k-kk4" firstAttribute="centerY" secondItem="fCx-Cf-fvR" secondAttribute="centerY" id="VeI-Zj-AaQ"/>
+                                        <constraint firstAttribute="width" constant="30" id="wED-aR-iUw"/>
+                                        <constraint firstItem="PVa-5k-kk4" firstAttribute="leading" secondItem="fCx-Cf-fvR" secondAttribute="leading" id="yZG-Fo-2AR"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="選択肢" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHu-3t-7mI">
+                                    <rect key="frame" x="30" y="13.666666666666671" width="361" height="16"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVu-QS-7qy">
+                    <rect key="frame" x="0.0" y="59" width="393" height="45"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="actionClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="gLE-V7-itq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NVu-QS-7qy" secondAttribute="trailing" id="2ry-Qe-O6P"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qcj-HQ-zVK" secondAttribute="bottom" constant="1" id="IEk-ad-66n"/>
+                <constraint firstItem="NVu-QS-7qy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RaN-oO-3jF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qcj-HQ-zVK" secondAttribute="trailing" constant="1" id="S9B-ma-9QV"/>
+                <constraint firstItem="qcj-HQ-zVK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="1" id="UiX-Dw-MVD"/>
+                <constraint firstItem="NVu-QS-7qy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XRr-sI-Gtx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="NVu-QS-7qy" secondAttribute="bottom" id="ZIZ-BL-qtS"/>
+                <constraint firstItem="qcj-HQ-zVK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="1" id="wfL-70-3kO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgCheckBox" destination="PVa-5k-kk4" id="guD-GU-T1d"/>
+                <outlet property="lbTitle" destination="dHu-3t-7mI" id="VeF-a7-eTl"/>
+            </connections>
+            <point key="canvasLocation" x="-135.1145038167939" y="-231.69014084507043"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_unchecked" width="19" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

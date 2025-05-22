@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeleteAccountVC" customModule="IMT_iOSTests" customModuleProvider="target">
+            <connections>
+                <outlet property="btnDelete" destination="EQE-Vq-mEF" id="dnr-2f-QCG"/>
+                <outlet property="cstHeightTbvReason" destination="yWx-SH-Ljn" id="Uyr-yl-Ma2"/>
+                <outlet property="scvContainer" destination="dcA-9n-Fxb" id="oqL-Ce-v0W"/>
+                <outlet property="tbvReason" destination="CNj-AC-0XM" id="Wak-8R-XmH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="1158"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcA-9n-Fxb">
+                    <rect key="frame" x="0.0" y="99" width="397" height="1059"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UW8-Nu-bMS">
+                            <rect key="frame" x="15" y="0.0" width="367" height="607"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgZ-Pw-Z5M">
+                                    <rect key="frame" x="3.6666666666666572" y="0.0" width="360" height="45"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="アプリ登録を削除（退会）すると、利用者の全ての情報、馬券メモリアルなどの全てのデータは失われ、復元することはできません。">
+                                            <attributes>
+                                                <color key="NSColor" red="0.8784313725490196" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="HiraginoSans-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KE3-Uk-H9f" userLabel="space">
+                                    <rect key="frame" x="5" y="45" width="357" height="34"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="EIV-Mo-DPc"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アンケートにご協力をお願いします" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifi-ls-p4H">
+                                    <rect key="frame" x="55.666666666666686" y="79" width="256" height="16"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFm-R6-bAf" userLabel="space">
+                                    <rect key="frame" x="5" y="95" width="357" height="15"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="CTf-Kj-Pjg"/>
+                                    </constraints>
+                                </view>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" keyboardDismissMode="interactive" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CNj-AC-0XM">
+                                    <rect key="frame" x="0.0" y="110" width="367" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="yWx-SH-Ljn"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="zJd-r6-HRQ"/>
+                                        <outlet property="delegate" destination="-1" id="9Av-kO-okB"/>
+                                    </connections>
+                                </tableView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSO-u7-lBw" userLabel="space">
+                                    <rect key="frame" x="5" y="310" width="357" height="44"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="dQh-uO-YbI"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iS4-ln-MSv">
+                                    <rect key="frame" x="3.6666666666666572" y="354" width="360" height="55"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="アプリ登録を削除（退会）すると、利用者の全ての情報、馬券メモリアルなどの全てのデータは失われ、復元することはできません。">
+                                            <attributes>
+                                                <color key="NSColor" red="0.87843137250000003" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="HiraginoSans-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHU-NI-Yvn" userLabel="space">
+                                    <rect key="frame" x="5" y="409" width="357" height="19"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="fbG-qm-NtJ"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本当に削除（退会）しますか？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbE-Kn-nHg">
+                                    <rect key="frame" x="71.666666666666671" y="428" width="223.66666666666663" height="16"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1u-mC-oZT" userLabel="space">
+                                    <rect key="frame" x="5" y="444" width="357" height="20"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="GHc-2j-RjH"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="g3X-2f-p8h">
+                                    <rect key="frame" x="28" y="464" width="311" height="103"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQE-Vq-mEF" customClass="IMTButton" customModule="IMT_iOSTests" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="311" height="46"/>
+                                            <color key="backgroundColor" red="0.1450980392" green="0.37647058820000001" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="guC-cZ-sY4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="削除（退会）する">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="actionDeleteAccount:" destination="-1" eventType="touchUpInside" id="Uvw-Ry-h6o"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z01-Sc-h7l" customClass="IMTBorderButton" customModule="IMT_iOSTests" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="57" width="311" height="46"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="Bs3-EX-88C"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="キャンセル">
+                                                <color key="titleColor" red="0.1450980392" green="0.37647058820000001" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.1450980392" green="0.37647058820000001" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="actionClose:" destination="-1" eventType="touchUpInside" id="vES-yW-igH"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6j-Xr-e22" userLabel="space">
+                                    <rect key="frame" x="5" y="567" width="357" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="38T-RP-OS3"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="g3X-2f-p8h" firstAttribute="leading" secondItem="UW8-Nu-bMS" secondAttribute="leading" constant="28" id="TAs-9w-mtm"/>
+                                <constraint firstItem="CNj-AC-0XM" firstAttribute="width" secondItem="UW8-Nu-bMS" secondAttribute="width" id="eLN-mg-Bnc"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="UW8-Nu-bMS" firstAttribute="leading" secondItem="dcA-9n-Fxb" secondAttribute="leading" constant="15" id="2St-A5-2pF"/>
+                        <constraint firstAttribute="bottom" secondItem="UW8-Nu-bMS" secondAttribute="bottom" id="FtO-QC-F8l"/>
+                        <constraint firstItem="UW8-Nu-bMS" firstAttribute="top" secondItem="dcA-9n-Fxb" secondAttribute="top" id="Ree-ts-KYc"/>
+                        <constraint firstItem="UW8-Nu-bMS" firstAttribute="centerX" secondItem="dcA-9n-Fxb" secondAttribute="centerX" id="qp8-Za-bPt"/>
+                        <constraint firstAttribute="trailing" secondItem="UW8-Nu-bMS" secondAttribute="trailing" id="t0J-Q2-Yfz"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="dcA-9n-Fxb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ERk-B0-wPi"/>
+                <constraint firstAttribute="bottom" secondItem="dcA-9n-Fxb" secondAttribute="bottom" id="NkV-WB-00e"/>
+                <constraint firstItem="dcA-9n-Fxb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="QTF-4G-eT6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dcA-9n-Fxb" secondAttribute="trailing" id="uCi-EW-Ybu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="20.610687022900763" y="75.352112676056336"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="EQE-Vq-mEF">
+            <size key="intrinsicContentSize" width="112" height="26"/>
+        </designable>
+        <designable name="Z01-Sc-h7l">
+            <size key="intrinsicContentSize" width="70" height="26"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

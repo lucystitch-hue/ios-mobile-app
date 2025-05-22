@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W5.ttc">
+            <string>HiraginoSans-W5</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="KGk-i7-Jjw" customClass="SubNumerLinksCell" customModule="IMT_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="IMTView" customModule="IMT_iOS" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UtI-Hs-1Ya" userLabel="View1" customClass="IMTView" customModule="IMT_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="465" height="74"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chevronright" translatesAutoresizingMaskIntoConstraints="NO" id="ez3-9O-DHf">
+                                <rect key="frame" x="441.66666666666669" y="31.333333333333329" width="8" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="IyB-w1-3XR"/>
+                                    <constraint firstAttribute="width" constant="8" id="TB2-j0-LG5"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="VQy-av-a9C">
+                                <rect key="frame" x="100" y="10" width="155" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加入者番号：999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNg-Ld-pV2" customClass="IMTLabel" customModule="IMT_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="18"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W5" family="Hiragino Sans" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P-ARS番号：999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBp-CL-39u" customClass="IMTLabel" customModule="IMT_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="20" width="155" height="14"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W5" family="Hiragino Sans" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暗証番号：****" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dv6-ei-H8Y" customClass="IMTLabel" customModule="IMT_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="36" width="155" height="18"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W5" family="Hiragino Sans" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aNg-Ld-pV2" firstAttribute="height" secondItem="VQy-av-a9C" secondAttribute="height" multiplier="1/3" id="Bgy-WN-CSh"/>
+                                    <constraint firstItem="Dv6-ei-H8Y" firstAttribute="height" secondItem="VQy-av-a9C" secondAttribute="height" multiplier="1/3" id="Or3-uW-JhE"/>
+                                    <constraint firstAttribute="width" secondItem="VQy-av-a9C" secondAttribute="height" multiplier="353:123" id="Zpv-CZ-fl8"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbW-cE-S2k" customClass="IMTButton" customModule="IMT_iOS" customModuleProvider="target">
+                                <rect key="frame" x="14" y="30" width="72" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5Y9-oa-jX5"/>
+                                    <constraint firstAttribute="width" constant="72" id="jHe-mw-xYk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="10"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="第一優先">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useShadown" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="manualRadius">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="0.69803921570000005" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WbW-cE-S2k" firstAttribute="top" secondItem="UtI-Hs-1Ya" secondAttribute="top" constant="30" id="Ewl-RG-5EP"/>
+                            <constraint firstItem="VQy-av-a9C" firstAttribute="leading" secondItem="WbW-cE-S2k" secondAttribute="trailing" constant="14" id="K0s-OR-H5r"/>
+                            <constraint firstItem="VQy-av-a9C" firstAttribute="top" secondItem="UtI-Hs-1Ya" secondAttribute="top" constant="10" id="Lso-T3-Yhn"/>
+                            <constraint firstItem="WbW-cE-S2k" firstAttribute="leading" secondItem="UtI-Hs-1Ya" secondAttribute="leading" constant="14" id="NZg-0C-UdD"/>
+                            <constraint firstAttribute="trailing" secondItem="ez3-9O-DHf" secondAttribute="trailing" constant="15.33" id="Xjq-zv-e5n"/>
+                            <constraint firstAttribute="bottom" secondItem="VQy-av-a9C" secondAttribute="bottom" constant="10" id="b6K-yG-oOz"/>
+                            <constraint firstAttribute="bottom" secondItem="ez3-9O-DHf" secondAttribute="bottom" constant="31.670000000000002" id="cvA-nX-Vp1"/>
+                            <constraint firstItem="ez3-9O-DHf" firstAttribute="top" secondItem="UtI-Hs-1Ya" secondAttribute="top" constant="31.329999999999998" id="jtW-WR-niJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="manualRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="UtI-Hs-1Ya" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Gug-67-zl1"/>
+                    <constraint firstItem="UtI-Hs-1Ya" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="M89-cS-e29"/>
+                    <constraint firstAttribute="bottom" secondItem="UtI-Hs-1Ya" secondAttribute="bottom" id="cui-yb-ig4"/>
+                    <constraint firstAttribute="trailing" secondItem="UtI-Hs-1Ya" secondAttribute="trailing" constant="-31" id="pR3-Je-Wem"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="useShadownView" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnPriority" destination="WbW-cE-S2k" id="QyN-vu-gGd"/>
+                <outlet property="lbpars" destination="RBp-CL-39u" id="7AC-nw-9g8"/>
+                <outlet property="lbpin" destination="Dv6-ei-H8Y" id="xjb-qK-ps4"/>
+                <outlet property="lbsubscriberNumber" destination="aNg-Ld-pV2" id="UUI-79-dor"/>
+                <outlet property="vContent" destination="UtI-Hs-1Ya" id="V1A-gd-x4A"/>
+            </connections>
+            <point key="canvasLocation" x="478" y="17"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_chevronright" width="12" height="21"/>
+    </resources>
+</document>

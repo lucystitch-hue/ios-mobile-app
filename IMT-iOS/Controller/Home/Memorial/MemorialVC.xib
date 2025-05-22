@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MemorialVC" customModule="IMT_TEST" customModuleProvider="target">
+            <connections>
+                <outlet property="lbDescribe" destination="t4K-cQ-FGw" id="meJ-io-jXT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvz-Tl-Csg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qyi-6M-2sQ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_memorialrace" translatesAutoresizingMaskIntoConstraints="NO" id="Cbs-gA-cui">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="188"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Cbs-gA-cui" secondAttribute="height" multiplier="2.2" id="4SC-Ff-NOP"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wm1-Ue-1BQ">
+                                    <rect key="frame" x="0.0" y="188" width="414" height="515"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xz1-9d-ci6" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                            <rect key="frame" x="45" y="44" width="324" height="62"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="競馬場・ウインズなどで購入した勝馬投票券をスマホのカメラで読み取ることで、デジタルイメージとして保存できます！">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="14" name="HiraginoSans-W6"/>
+                                                        <real key="NSKern" value="0.0"/>
+                                                        <font key="NSOriginalFont" size="12" name="Times-Roman"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="7" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <real key="NSStrokeWidth" value="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_memorial" translatesAutoresizingMaskIntoConstraints="NO" id="ewq-Cj-uo0">
+                                            <rect key="frame" x="0.0" y="-154" width="414" height="724"/>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="BI3-OO-YIZ">
+                                            <rect key="frame" x="37" y="132" width="340" height="151.5"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXa-H1-Ufu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="151.5" height="151.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyT-MX-G30">
+                                                            <rect key="frame" x="0.0" y="0.0" width="151.5" height="151.5"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="ic_register_ticket"/>
+                                                            <connections>
+                                                                <action selector="actionRegister:" destination="-1" eventType="touchUpInside" id="XgY-lT-x3S"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="IyT-MX-G30" firstAttribute="width" secondItem="cXa-H1-Ufu" secondAttribute="width" id="Shc-VC-RPV"/>
+                                                        <constraint firstItem="IyT-MX-G30" firstAttribute="centerY" secondItem="cXa-H1-Ufu" secondAttribute="centerY" id="gQl-rJ-M1T"/>
+                                                        <constraint firstItem="IyT-MX-G30" firstAttribute="height" secondItem="cXa-H1-Ufu" secondAttribute="height" id="osI-zU-AGy"/>
+                                                        <constraint firstItem="IyT-MX-G30" firstAttribute="centerX" secondItem="cXa-H1-Ufu" secondAttribute="centerX" id="qmC-oE-uk4"/>
+                                                        <constraint firstAttribute="width" secondItem="cXa-H1-Ufu" secondAttribute="height" id="zE2-Jg-DQ9"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qev-RO-R7N">
+                                                    <rect key="frame" x="188.5" y="0.0" width="151.5" height="151.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0g-Y2-BGq">
+                                                            <rect key="frame" x="0.0" y="0.0" width="151.5" height="151.5"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="ic_review_ticket"/>
+                                                            <connections>
+                                                                <action selector="actionRefer:" destination="-1" eventType="touchUpInside" id="lQh-7F-lTs"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="r0g-Y2-BGq" firstAttribute="height" secondItem="Qev-RO-R7N" secondAttribute="height" id="6T5-G1-Y6B"/>
+                                                        <constraint firstItem="r0g-Y2-BGq" firstAttribute="centerY" secondItem="Qev-RO-R7N" secondAttribute="centerY" id="MhJ-df-GgH"/>
+                                                        <constraint firstItem="r0g-Y2-BGq" firstAttribute="width" secondItem="Qev-RO-R7N" secondAttribute="width" id="dCG-Gp-lSo"/>
+                                                        <constraint firstItem="r0g-Y2-BGq" firstAttribute="centerX" secondItem="Qev-RO-R7N" secondAttribute="centerX" id="ezP-Kr-AbL"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4K-cQ-FGw" userLabel="ー注意ー" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="326" width="374" height="109"/>
+                                            <attributedString key="attributedText">
+                                                <fragment>
+                                                    <string key="content">ご注意
+・勝馬投票券の的中券、返還券の払戻期間は60日間です。
+・馬券イメージでは払戻ができません。
+・馬券イメージはお客様の勝馬投票券の購入、所有を証明するものではありません。
+・J-PLACEで購入した勝馬投票券では、馬券メモリアルをご利用になれません。</string>
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="13" name="HiraginoSans-W4"/>
+                                                        <real key="NSKern" value="0.0"/>
+                                                        <font key="NSOriginalFont" size="12" name="Times-Roman"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="3" headIndent="12" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <real key="NSStrokeWidth" value="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="xz1-9d-ci6" firstAttribute="top" secondItem="wm1-Ue-1BQ" secondAttribute="top" constant="44" id="0pW-kq-NKY"/>
+                                        <constraint firstItem="t4K-cQ-FGw" firstAttribute="centerX" secondItem="wm1-Ue-1BQ" secondAttribute="centerX" id="1bn-H4-5ur"/>
+                                        <constraint firstAttribute="bottom" secondItem="t4K-cQ-FGw" secondAttribute="bottom" constant="80" id="1uT-GN-aFb"/>
+                                        <constraint firstItem="ewq-Cj-uo0" firstAttribute="leading" secondItem="wm1-Ue-1BQ" secondAttribute="leading" id="AZX-7s-o4v"/>
+                                        <constraint firstItem="BI3-OO-YIZ" firstAttribute="leading" secondItem="wm1-Ue-1BQ" secondAttribute="leading" constant="37" id="GFs-R5-pqT"/>
+                                        <constraint firstItem="BI3-OO-YIZ" firstAttribute="centerX" secondItem="wm1-Ue-1BQ" secondAttribute="centerX" id="Hiq-8o-IuY"/>
+                                        <constraint firstItem="BI3-OO-YIZ" firstAttribute="top" secondItem="xz1-9d-ci6" secondAttribute="bottom" multiplier="1.25" id="SCB-7t-Slw"/>
+                                        <constraint firstItem="BI3-OO-YIZ" firstAttribute="centerY" secondItem="ewq-Cj-uo0" secondAttribute="centerY" id="WXc-6L-yZf"/>
+                                        <constraint firstItem="ewq-Cj-uo0" firstAttribute="centerX" secondItem="wm1-Ue-1BQ" secondAttribute="centerX" id="ZZy-v3-ZUB"/>
+                                        <constraint firstAttribute="trailing" secondItem="ewq-Cj-uo0" secondAttribute="trailing" id="fTM-y1-SgE"/>
+                                        <constraint firstItem="xz1-9d-ci6" firstAttribute="centerX" secondItem="wm1-Ue-1BQ" secondAttribute="centerX" id="gaX-It-UWr"/>
+                                        <constraint firstItem="xz1-9d-ci6" firstAttribute="leading" secondItem="BI3-OO-YIZ" secondAttribute="leading" constant="8" id="nVJ-6r-vwY"/>
+                                        <constraint firstItem="t4K-cQ-FGw" firstAttribute="leading" secondItem="wm1-Ue-1BQ" secondAttribute="leading" constant="20" id="tv0-Ve-Tsn"/>
+                                        <constraint firstItem="t4K-cQ-FGw" firstAttribute="top" secondItem="BI3-OO-YIZ" secondAttribute="bottom" multiplier="1.15" id="vzl-Su-3hR"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Qyi-6M-2sQ" firstAttribute="bottom" secondItem="Jg1-jv-oYl" secondAttribute="bottom" id="BOE-HP-Rjj"/>
+                        <constraint firstItem="Qyi-6M-2sQ" firstAttribute="leading" secondItem="Jg1-jv-oYl" secondAttribute="leading" id="Lzi-dE-1WM"/>
+                        <constraint firstItem="Qyi-6M-2sQ" firstAttribute="trailing" secondItem="Jg1-jv-oYl" secondAttribute="trailing" id="nz6-Tr-glN"/>
+                        <constraint firstItem="Qyi-6M-2sQ" firstAttribute="width" secondItem="2hN-c7-MPD" secondAttribute="width" id="s1D-bT-GXL"/>
+                        <constraint firstItem="Qyi-6M-2sQ" firstAttribute="top" secondItem="Jg1-jv-oYl" secondAttribute="top" priority="1" id="zxh-x4-kw4"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Jg1-jv-oYl"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="2hN-c7-MPD"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pvz-Tl-Csg" secondAttribute="bottom" id="88a-wg-2OJ"/>
+                <constraint firstItem="pvz-Tl-Csg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bh6-IU-41u"/>
+                <constraint firstItem="pvz-Tl-Csg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cFg-qG-nni"/>
+                <constraint firstItem="pvz-Tl-Csg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="mbM-Na-W2z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-89.855072463768124" y="284.59821428571428"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="t4K-cQ-FGw">
+            <size key="intrinsicContentSize" width="494" height="77"/>
+        </designable>
+        <designable name="xz1-9d-ci6">
+            <size key="intrinsicContentSize" width="770" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="bg_memorial" width="750" height="724"/>
+        <image name="bg_memorialrace" width="750" height="341"/>
+        <image name="ic_register_ticket" width="278" height="275.5"/>
+        <image name="ic_review_ticket" width="276.5" height="277.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

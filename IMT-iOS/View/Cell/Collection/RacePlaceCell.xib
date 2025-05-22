@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RacePlaceCell" id="gTV-IL-0wX" customClass="RacePlaceCell" customModule="IMT_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="137" height="39"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="137" height="39"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmu-Kp-2LV">
+                        <rect key="frame" x="0.0" y="8" width="137" height="31"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="東京" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1l-fb-ivY" customClass="IMTLabel" customModule="IMT_iOS" customModuleProvider="target">
+                                <rect key="frame" x="47.666666666666657" y="5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27062243219999998" green="0.43061089520000001" blue="0.65722209220000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f1l-fb-ivY" firstAttribute="centerY" secondItem="nmu-Kp-2LV" secondAttribute="centerY" id="XfI-N4-Jbe"/>
+                            <constraint firstItem="f1l-fb-ivY" firstAttribute="centerX" secondItem="nmu-Kp-2LV" secondAttribute="centerX" id="pf8-GC-8sP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nmu-Kp-2LV" secondAttribute="bottom" id="3ho-8z-TGl"/>
+                <constraint firstItem="nmu-Kp-2LV" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="PHf-dk-poj"/>
+                <constraint firstItem="nmu-Kp-2LV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="doc-AT-mwW"/>
+                <constraint firstItem="nmu-Kp-2LV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m9e-5L-5o5"/>
+            </constraints>
+            <size key="customSize" width="137" height="39"/>
+            <connections>
+                <outlet property="cstTopBackground" destination="doc-AT-mwW" id="4YO-dw-wK1"/>
+                <outlet property="lbPlace" destination="f1l-fb-ivY" id="ttV-XZ-UJ9"/>
+                <outlet property="vBackground" destination="nmu-Kp-2LV" id="cKy-Wk-cIW"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="-15.140845070422536"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="f1l-fb-ivY">
+            <size key="intrinsicContentSize" width="42" height="21"/>
+        </designable>
+    </designables>
+</document>

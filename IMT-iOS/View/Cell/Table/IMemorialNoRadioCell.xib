@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IMemorialNoRadioCell" rowHeight="89" id="KGk-i7-Jjw" customClass="IMemorialNoRadioCell" customModule="IMT_TEST" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="579" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="579" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQs-8b-FfA">
+                        <rect key="frame" x="3" y="3" width="573" height="83"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fWS-AT-gVf">
+                                <rect key="frame" x="11" y="0.0" width="551" height="83"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEP-nJ-7sR">
+                                        <rect key="frame" x="-20" y="31.666666666666664" width="20" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_unselect_radio_button" translatesAutoresizingMaskIntoConstraints="NO" id="d7J-yd-fJc">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nz-9L-ZhU">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="9nz-9L-ZhU" firstAttribute="centerX" secondItem="hEP-nJ-7sR" secondAttribute="centerX" id="An1-1N-TPG"/>
+                                            <constraint firstAttribute="bottom" secondItem="d7J-yd-fJc" secondAttribute="bottom" id="Bgb-dg-QYF"/>
+                                            <constraint firstItem="9nz-9L-ZhU" firstAttribute="centerY" secondItem="hEP-nJ-7sR" secondAttribute="centerY" id="F7C-Y2-O90"/>
+                                            <constraint firstAttribute="width" constant="20" id="KeE-F3-AsC"/>
+                                            <constraint firstItem="9nz-9L-ZhU" firstAttribute="height" secondItem="hEP-nJ-7sR" secondAttribute="height" id="VV0-Ez-uKh"/>
+                                            <constraint firstAttribute="width" secondItem="hEP-nJ-7sR" secondAttribute="height" id="cRp-Yn-VIK"/>
+                                            <constraint firstItem="d7J-yd-fJc" firstAttribute="top" secondItem="hEP-nJ-7sR" secondAttribute="top" id="iwo-mw-jyY"/>
+                                            <constraint firstAttribute="trailing" secondItem="d7J-yd-fJc" secondAttribute="trailing" id="qBp-lM-t0a"/>
+                                            <constraint firstItem="9nz-9L-ZhU" firstAttribute="width" secondItem="hEP-nJ-7sR" secondAttribute="width" id="ujY-uI-THO"/>
+                                            <constraint firstItem="d7J-yd-fJc" firstAttribute="leading" secondItem="hEP-nJ-7sR" secondAttribute="leading" id="wf9-Wm-g8A"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="TEi-1i-fMJ">
+                                        <rect key="frame" x="0.0" y="16" width="551" height="51"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="13D-Hn-cMo">
+                                                <rect key="frame" x="0.0" y="0.0" width="551" height="18.666666666666668"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="2006年10月22日" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uf-qd-eoB" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="18.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                        <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="semiBoldWeight" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="mediumSize" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text=" 京都 11F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1c-MN-yJK" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                                        <rect key="frame" x="193" y="0.0" width="77.333333333333314" height="18.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="16"/>
+                                                        <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="semiBoldWeight" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="mediumSize" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kb6-7n-ip1">
+                                                        <rect key="frame" x="290.33333333333326" y="0.0" width="260.66666666666674" height="18.666666666666668"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dKr-Mb-YiN">
+                                                <rect key="frame" x="0.0" y="30.666666666666664" width="551" height="20.333333333333336"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="アメリカジョッキー" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtH-Op-rYP" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="2.3333333333333357" width="143.33333333333334" height="16"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="16"/>
+                                                        <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="mediumSize" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="semiBoldWeight" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UCT-53-fKM">
+                                                        <rect key="frame" x="151.33333333333334" y="1.3333333333333357" width="103.33333333333334" height="18"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="751" text="GⅢ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsD-Zk-gQp" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                                                <rect key="frame" x="3" y="3" width="97.333333333333329" height="12"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="highlightedColor" name="AccentColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="lsD-Zk-gQp" firstAttribute="leading" secondItem="UCT-53-fKM" secondAttribute="leading" constant="3" id="3HA-zT-MTC"/>
+                                                            <constraint firstItem="lsD-Zk-gQp" firstAttribute="top" secondItem="UCT-53-fKM" secondAttribute="top" constant="3" id="AoR-ww-b7m"/>
+                                                            <constraint firstAttribute="bottom" secondItem="lsD-Zk-gQp" secondAttribute="bottom" constant="3" id="WXn-jw-M0y"/>
+                                                            <constraint firstAttribute="trailing" secondItem="lsD-Zk-gQp" secondAttribute="trailing" constant="3" id="nhI-KK-vXh"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgh-G9-x5Z">
+                                                        <rect key="frame" x="262.66666666666674" y="0.0" width="288.33333333333326" height="20.333333333333332"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TEi-1i-fMJ" firstAttribute="top" secondItem="fWS-AT-gVf" secondAttribute="top" constant="16" id="2jd-UG-sdM"/>
+                                    <constraint firstAttribute="bottom" secondItem="TEi-1i-fMJ" secondAttribute="bottom" constant="16" id="dyZ-mz-rgb"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tju-05-mdi">
+                                <rect key="frame" x="0.0" y="0.0" width="573" height="83"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="actionSelected:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IBf-0C-KRV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tju-05-mdi" firstAttribute="centerY" secondItem="bQs-8b-FfA" secondAttribute="centerY" id="Cnd-IO-mO3"/>
+                            <constraint firstAttribute="trailing" secondItem="fWS-AT-gVf" secondAttribute="trailing" constant="11" id="HQR-pg-Iq0"/>
+                            <constraint firstItem="fWS-AT-gVf" firstAttribute="leading" secondItem="bQs-8b-FfA" secondAttribute="leading" constant="11" id="N8w-Pf-OEG"/>
+                            <constraint firstItem="Tju-05-mdi" firstAttribute="height" secondItem="bQs-8b-FfA" secondAttribute="height" id="SMI-qj-TV8"/>
+                            <constraint firstItem="Tju-05-mdi" firstAttribute="centerX" secondItem="bQs-8b-FfA" secondAttribute="centerX" id="TDn-Pb-zCx"/>
+                            <constraint firstItem="Tju-05-mdi" firstAttribute="width" secondItem="bQs-8b-FfA" secondAttribute="width" id="TIB-rO-0vq"/>
+                            <constraint firstAttribute="bottom" secondItem="fWS-AT-gVf" secondAttribute="bottom" id="hM1-5J-vfW"/>
+                            <constraint firstItem="fWS-AT-gVf" firstAttribute="top" secondItem="bQs-8b-FfA" secondAttribute="top" id="yUq-y6-PO5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="bQs-8b-FfA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="KUK-5M-itI"/>
+                    <constraint firstAttribute="trailing" secondItem="bQs-8b-FfA" secondAttribute="trailing" constant="3" id="LJz-Ga-jzu"/>
+                    <constraint firstItem="bQs-8b-FfA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="OTm-na-A54"/>
+                    <constraint firstAttribute="bottom" secondItem="bQs-8b-FfA" secondAttribute="bottom" constant="3" id="fqQ-tB-laS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgRadio" destination="d7J-yd-fJc" id="C77-kK-TC8"/>
+                <outlet property="lblDate" destination="2uf-qd-eoB" id="ukf-ud-lzU"/>
+                <outlet property="lblGrade" destination="lsD-Zk-gQp" id="Gka-Ud-0A9"/>
+                <outlet property="lblName" destination="UtH-Op-rYP" id="jQt-i1-KCE"/>
+                <outlet property="lblTitle" destination="e1c-MN-yJK" id="2Z7-II-yvP"/>
+                <outlet property="svGroupName" destination="dKr-Mb-YiN" id="4N8-PQ-Tm3"/>
+                <outlet property="vBackground" destination="bQs-8b-FfA" id="HaB-wx-brz"/>
+                <outlet property="vBackgroundGrade" destination="UCT-53-fKM" id="jTz-xg-OHg"/>
+                <outlet property="vRadioGroup" destination="hEP-nJ-7sR" id="ddP-YI-WXn"/>
+            </connections>
+            <point key="canvasLocation" x="-400.76923076923077" y="60.78199052132701"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="2uf-qd-eoB">
+            <size key="intrinsicContentSize" width="119.33333333333333" height="18.666666666666668"/>
+        </designable>
+        <designable name="UtH-Op-rYP">
+            <size key="intrinsicContentSize" width="143.33333333333334" height="16"/>
+        </designable>
+        <designable name="e1c-MN-yJK">
+            <size key="intrinsicContentSize" width="77.333333333333329" height="16"/>
+        </designable>
+        <designable name="lsD-Zk-gQp">
+            <size key="intrinsicContentSize" width="21.666666666666668" height="12"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_unselect_radio_button" width="35" height="35"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

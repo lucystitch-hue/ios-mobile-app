@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RaceHorseSearchVC" customModule="IMT_TEST" customModuleProvider="target">
+            <connections>
+                <outlet property="cstHeightTableView" destination="5lj-LX-CZt" id="Suw-bL-Srx"/>
+                <outlet property="lbStartWith" destination="4zY-nM-eIl" id="Aqj-3i-NvM"/>
+                <outlet property="lbWarning" destination="Tjv-Ae-yyU" id="lnU-Pj-RIm"/>
+                <outlet property="tableView" destination="PLr-1S-4QR" id="D8d-8d-XP9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYr-jn-1j7">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hte-m9-lRi">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="679"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="検索条件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcy-89-swv">
+                                    <rect key="frame" x="20" y="0.0" width="64" height="16"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXg-sO-0OJ">
+                                    <rect key="frame" x="0.0" y="24" width="393" height="655"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yix-Wt-iVb">
+                                            <rect key="frame" x="20" y="20" width="353" height="615"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u0g-YE-jdE" userLabel="GroupPassword">
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="112"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="馬名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7D3-Xg-Nmm" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="353" height="16"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                            <color key="textColor" red="0.0" green="0.45882352939999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KdS-3d-Bum">
+                                                            <rect key="frame" x="0.0" y="26" width="353" height="40"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2K-4D-iko" userLabel="View1" customClass="IMTInnerShadowView" customModule="IMT_TEST" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="213" height="40"/>
+                                                                    <subviews>
+                                                                        <textField opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vYs-55-moR" customClass="IMTTextField" customModule="IMT_TEST" customModuleProvider="target">
+                                                                            <rect key="frame" x="10" y="0.0" width="193" height="40"/>
+                                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                                            <textInputTraits key="textInputTraits"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="borderStyleNone" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                            <connections>
+                                                                                <action selector="textFieldEditingChanged:" destination="-1" eventType="editingChanged" id="chT-Jd-i32"/>
+                                                                            </connections>
+                                                                        </textField>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="bottom" secondItem="vYs-55-moR" secondAttribute="bottom" id="O0h-1Q-Jmj"/>
+                                                                        <constraint firstItem="vYs-55-moR" firstAttribute="top" secondItem="U2K-4D-iko" secondAttribute="top" id="a9E-2Z-6vW"/>
+                                                                        <constraint firstItem="vYs-55-moR" firstAttribute="leading" secondItem="U2K-4D-iko" secondAttribute="leading" constant="10" id="hvD-Am-OcH"/>
+                                                                        <constraint firstAttribute="height" constant="40" id="ljH-1S-ejB"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="vYs-55-moR" secondAttribute="trailing" constant="10" id="nS3-5z-wBL"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="manualRadius">
+                                                                            <real key="value" value="8.5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="useShadownView" value="NO"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCZ-tr-t7m" customClass="IMTInnerShadowView" customModule="IMT_TEST" customModuleProvider="target">
+                                                                    <rect key="frame" x="223" y="0.0" width="130" height="40"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="で始まる" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zY-nM-eIl" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                                                            <rect key="frame" x="14" y="5" width="91" height="30"/>
+                                                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                                            <color key="textColor" red="0.61960784310000006" green="0.62745098040000002" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="1AD-wo-crg">
+                                                                            <rect key="frame" x="108" y="15.666666666666657" width="9" height="9"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="9" id="GBs-0C-jPg"/>
+                                                                                <constraint firstAttribute="height" constant="9" id="c2L-pu-AQF"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLt-q5-GyL">
+                                                                            <rect key="frame" x="0.0" y="5" width="130" height="30"/>
+                                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                            <state key="normal">
+                                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                            <connections>
+                                                                                <action selector="actionDropdown:" destination="-1" eventType="touchUpInside" id="Ny4-O9-rEn"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="DLY-Hi-9rh"/>
+                                                                        <constraint firstItem="lLt-q5-GyL" firstAttribute="centerY" secondItem="yCZ-tr-t7m" secondAttribute="centerY" id="Hta-fC-iI2"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="1AD-wo-crg" secondAttribute="trailing" constant="13" id="ISR-EF-5GG"/>
+                                                                        <constraint firstItem="1AD-wo-crg" firstAttribute="centerY" secondItem="yCZ-tr-t7m" secondAttribute="centerY" id="MdI-qq-wYC"/>
+                                                                        <constraint firstItem="4zY-nM-eIl" firstAttribute="leading" secondItem="yCZ-tr-t7m" secondAttribute="leading" constant="14" id="Nix-pP-oAj"/>
+                                                                        <constraint firstItem="4zY-nM-eIl" firstAttribute="top" secondItem="yCZ-tr-t7m" secondAttribute="top" constant="5" id="Ut6-t3-Hat"/>
+                                                                        <constraint firstItem="1AD-wo-crg" firstAttribute="leading" secondItem="4zY-nM-eIl" secondAttribute="trailing" constant="3" id="aSC-Pf-6eR"/>
+                                                                        <constraint firstItem="lLt-q5-GyL" firstAttribute="width" secondItem="yCZ-tr-t7m" secondAttribute="width" id="ebB-ti-lKm"/>
+                                                                        <constraint firstAttribute="width" constant="130" id="tY6-sm-Fuv"/>
+                                                                        <constraint firstItem="4zY-nM-eIl" firstAttribute="centerY" secondItem="yCZ-tr-t7m" secondAttribute="centerY" id="uYW-sK-7vD"/>
+                                                                        <constraint firstItem="lLt-q5-GyL" firstAttribute="centerX" secondItem="yCZ-tr-t7m" secondAttribute="centerX" id="yAi-mA-A66"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="useShadownView" value="NO"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjv-Ae-yyU">
+                                                            <rect key="frame" x="0.0" y="71" width="353" height="0.0"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment>
+                                                                    <string key="content">馬名は2文字以上で入力してください。
+全角カタカナまたは全角ひらがなで入力してください。</string>
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.8784313725490196" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="13" name="HiraginoSans-W6"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJv-fo-K7O">
+                                                            <rect key="frame" x="0.0" y="76" width="353" height="36"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="※馬名は全角カタカナまたは全角ひらがなで2文字以上入力してください。">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="13" name="HiraginoSans-W6"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jar-bY-573">
+                                                    <rect key="frame" x="0.0" y="132" width="353" height="413"/>
+                                                    <subviews>
+                                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PLr-1S-4QR">
+                                                            <rect key="frame" x="0.0" y="0.0" width="353" height="400"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="400" id="5lj-LX-CZt"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="dataSource" destination="-1" id="fIw-Wr-YiF"/>
+                                                                <outlet property="delegate" destination="-1" id="NEI-b7-ZhN"/>
+                                                            </connections>
+                                                        </tableView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hT7-Kv-ueJ">
+                                                            <rect key="frame" x="0.0" y="400" width="353" height="13"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="※現役馬と2000年以降の登録抹消馬の検索が可能です。">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="13" name="HiraginoSans-W6"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf3-z6-3WP" customClass="IMTButton" customModule="IMT_TEST" customModuleProvider="target">
+                                                    <rect key="frame" x="26.333333333333343" y="565" width="300.33333333333326" height="50"/>
+                                                    <color key="backgroundColor" red="0.91764705879999997" green="0.39607843139999999" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="bW7-Fc-csq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="検索">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="actionSearch:" destination="-1" eventType="touchUpInside" id="MpW-aw-LgM"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jar-bY-573" firstAttribute="width" secondItem="yix-Wt-iVb" secondAttribute="width" id="5Cn-Pv-EzL"/>
+                                                <constraint firstItem="u0g-YE-jdE" firstAttribute="width" secondItem="yix-Wt-iVb" secondAttribute="width" id="NRJ-V8-NdG"/>
+                                                <constraint firstItem="Uf3-z6-3WP" firstAttribute="width" secondItem="yix-Wt-iVb" secondAttribute="width" multiplier="0.85" id="VeG-KP-5A0"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="yix-Wt-iVb" secondAttribute="bottom" constant="20" id="3nB-ag-od1"/>
+                                        <constraint firstItem="yix-Wt-iVb" firstAttribute="leading" secondItem="IXg-sO-0OJ" secondAttribute="leading" constant="20" id="QpI-Or-4ME"/>
+                                        <constraint firstItem="yix-Wt-iVb" firstAttribute="top" secondItem="IXg-sO-0OJ" secondAttribute="top" constant="20" id="biz-8x-17M"/>
+                                        <constraint firstAttribute="trailing" secondItem="yix-Wt-iVb" secondAttribute="trailing" constant="20" id="roi-Ag-sAX"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="jcy-89-swv" firstAttribute="top" secondItem="hte-m9-lRi" secondAttribute="top" id="brT-Yi-ugj"/>
+                                <constraint firstAttribute="trailing" secondItem="IXg-sO-0OJ" secondAttribute="trailing" id="hU2-7I-lJN"/>
+                                <constraint firstAttribute="bottom" secondItem="IXg-sO-0OJ" secondAttribute="bottom" id="jvQ-ip-mjm"/>
+                                <constraint firstItem="IXg-sO-0OJ" firstAttribute="top" secondItem="jcy-89-swv" secondAttribute="bottom" constant="8" symbolic="YES" id="m6H-X6-Rmu"/>
+                                <constraint firstItem="jcy-89-swv" firstAttribute="leading" secondItem="hte-m9-lRi" secondAttribute="leading" constant="20" id="mZe-sL-v2e"/>
+                                <constraint firstItem="IXg-sO-0OJ" firstAttribute="leading" secondItem="hte-m9-lRi" secondAttribute="leading" id="vzm-Zq-D5U"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hte-m9-lRi" firstAttribute="width" secondItem="8wZ-u3-B3T" secondAttribute="width" id="0F7-2E-PoF"/>
+                        <constraint firstItem="hte-m9-lRi" firstAttribute="bottom" secondItem="t9E-qO-Uln" secondAttribute="bottom" id="AUp-Co-G3G"/>
+                        <constraint firstItem="hte-m9-lRi" firstAttribute="leading" secondItem="t9E-qO-Uln" secondAttribute="leading" id="V7O-yt-RFL"/>
+                        <constraint firstItem="hte-m9-lRi" firstAttribute="trailing" secondItem="t9E-qO-Uln" secondAttribute="trailing" id="eeB-AV-tWp"/>
+                        <constraint firstItem="hte-m9-lRi" firstAttribute="top" secondItem="t9E-qO-Uln" secondAttribute="top" id="u0O-Q2-Ef2"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="t9E-qO-Uln"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="8wZ-u3-B3T"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PYr-jn-1j7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Eil-3Q-6pZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PYr-jn-1j7" secondAttribute="bottom" id="WQs-Rz-n0Y"/>
+                <constraint firstItem="PYr-jn-1j7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WXp-d0-YuP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PYr-jn-1j7" secondAttribute="trailing" id="jv6-Ix-Gsu"/>
+            </constraints>
+            <point key="canvasLocation" x="-147.32824427480915" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="4zY-nM-eIl">
+            <size key="intrinsicContentSize" width="56" height="14"/>
+        </designable>
+        <designable name="7D3-Xg-Nmm">
+            <size key="intrinsicContentSize" width="32" height="16"/>
+        </designable>
+        <designable name="Uf3-z6-3WP">
+            <size key="intrinsicContentSize" width="34" height="29"/>
+        </designable>
+        <designable name="vYs-55-moR">
+            <size key="intrinsicContentSize" width="33" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_arrow_down" width="16" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

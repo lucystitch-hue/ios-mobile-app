@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W5.ttc">
+            <string>HiraginoSans-W5</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WarningView" customModule="IMT_TEST" customModuleProvider="target">
+            <connections>
+                <outlet property="cstHeightFooter" destination="DEP-YX-2QY" id="FLo-GP-QEr"/>
+                <outlet property="cstHeightHeader" destination="idd-N7-tPA" id="MmQ-xn-dwM"/>
+                <outlet property="lblCaption" destination="bEU-Q2-MlU" id="YlU-fb-zyv"/>
+                <outlet property="lblContent" destination="BMf-lo-WxK" id="nBL-jf-RhE"/>
+                <outlet property="lblTitle" destination="ZGx-5X-bYg" id="9pc-gc-LaL"/>
+                <outlet property="svContainer" destination="n5h-BF-t5S" id="8yP-fb-6Wi"/>
+                <outlet property="svContent" destination="VvT-cn-GB3" id="Z82-wC-kkU"/>
+                <outlet property="vContent" destination="iN0-l3-epB" id="VkP-4L-Tlu"/>
+                <outlet property="vFooter" destination="4gm-h8-knV" id="nJQ-bP-Ewy"/>
+                <outlet property="vHeader" destination="VcO-aE-fOq" id="LMV-tz-zlc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="303"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n5h-BF-t5S">
+                    <rect key="frame" x="0.0" y="0.0" width="369" height="303"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VcO-aE-fOq" userLabel="Header">
+                            <rect key="frame" x="0.0" y="0.0" width="369" height="32"/>
+                            <subviews>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kd-nx-neO">
+                                    <rect key="frame" x="337" y="0.0" width="32" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="0kd-nx-neO" secondAttribute="height" id="g9B-1Y-rMB"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkl-F6-UoB">
+                                    <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Rkl-F6-UoB" secondAttribute="height" id="hrR-zR-bjP"/>
+                                        <constraint firstAttribute="width" secondItem="Rkl-F6-UoB" secondAttribute="height" id="q6g-L5-via"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="緊急お知らせ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEU-Q2-MlU" customClass="IMTLabel" customModule="IMT_iOS_DEV">
+                                    <rect key="frame" x="130.66666666666666" y="7" width="108" height="18"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="boldWeight" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="largeSize" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okq-P4-4zi">
+                                    <rect key="frame" x="0.0" y="0.0" width="369" height="32"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.75686274509803919" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="bEU-Q2-MlU" firstAttribute="centerY" secondItem="VcO-aE-fOq" secondAttribute="centerY" id="2Lw-6l-QdI"/>
+                                <constraint firstItem="okq-P4-4zi" firstAttribute="height" secondItem="VcO-aE-fOq" secondAttribute="height" id="3zh-OI-ceT"/>
+                                <constraint firstItem="okq-P4-4zi" firstAttribute="centerY" secondItem="VcO-aE-fOq" secondAttribute="centerY" id="84l-vJ-OKn"/>
+                                <constraint firstItem="Rkl-F6-UoB" firstAttribute="top" secondItem="VcO-aE-fOq" secondAttribute="top" id="B4N-0l-5aJ"/>
+                                <constraint firstItem="okq-P4-4zi" firstAttribute="width" secondItem="VcO-aE-fOq" secondAttribute="width" id="EjS-5R-udU"/>
+                                <constraint firstAttribute="trailing" secondItem="0kd-nx-neO" secondAttribute="trailing" id="I8F-Ey-YvB"/>
+                                <constraint firstItem="Rkl-F6-UoB" firstAttribute="leading" secondItem="VcO-aE-fOq" secondAttribute="leading" id="J2T-AR-fN2"/>
+                                <constraint firstAttribute="bottom" secondItem="Rkl-F6-UoB" secondAttribute="bottom" id="Kog-nP-W7d"/>
+                                <constraint firstItem="bEU-Q2-MlU" firstAttribute="centerX" secondItem="VcO-aE-fOq" secondAttribute="centerX" id="hqU-qD-X1g"/>
+                                <constraint firstAttribute="bottom" secondItem="0kd-nx-neO" secondAttribute="bottom" id="iar-Ic-Rgp"/>
+                                <constraint firstAttribute="height" constant="32" id="idd-N7-tPA"/>
+                                <constraint firstItem="0kd-nx-neO" firstAttribute="top" secondItem="VcO-aE-fOq" secondAttribute="top" id="kA4-Aq-ogi"/>
+                                <constraint firstItem="okq-P4-4zi" firstAttribute="centerX" secondItem="VcO-aE-fOq" secondAttribute="centerX" id="zgo-f4-wc3"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VvT-cn-GB3" userLabel="Content">
+                            <rect key="frame" x="10" y="42" width="349" height="251"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【!】お出かけ前にIMTホームページで確認を" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGx-5X-bYg">
+                                    <rect key="frame" x="0.0" y="0.0" width="349" height="14"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W5" family="Hiragino Sans" pointSize="14"/>
+                                    <color key="textColor" red="0.75686274509803919" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMf-lo-WxK">
+                                    <rect key="frame" x="0.0" y="24" width="349" height="227"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <attributedString key="attributedText">
+                                        <fragment>
+                                            <string key="content">明日【3月18日（土曜）】の競馬開催（第2回中山競馬第7日、第1回阪神競馬第11日、第2回中京競馬第3日）は、厩舎従業員春闘による影響が予想されるため、金曜日夜間発売および土曜日早朝発売（金曜日18時30分から土曜日9時00分）を取りやめます。また、明日の「競馬開催の有無」等につきましては、決定次第、IMTホームページ等でお知らせします。」でお願いします。</string>
+                                            <attributes>
+                                                <font key="NSFont" size="11" name="HiraginoSans-W3"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ZGx-5X-bYg" secondAttribute="trailing" id="92u-AQ-p00"/>
+                                <constraint firstItem="ZGx-5X-bYg" firstAttribute="leading" secondItem="VvT-cn-GB3" secondAttribute="leading" id="pQL-ba-o1l"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gm-h8-knV" userLabel="Footer">
+                            <rect key="frame" x="0.0" y="303" width="369" height="0.0"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="DEP-YX-2QY"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="VcO-aE-fOq" firstAttribute="width" secondItem="n5h-BF-t5S" secondAttribute="width" id="AxS-Wm-9x6"/>
+                        <constraint firstItem="VvT-cn-GB3" firstAttribute="leading" secondItem="n5h-BF-t5S" secondAttribute="leading" constant="10" id="Klh-Bk-g2i"/>
+                        <constraint firstItem="4gm-h8-knV" firstAttribute="width" secondItem="n5h-BF-t5S" secondAttribute="width" id="nbv-CB-AaD"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="n5h-BF-t5S" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6Co-mQ-F3A"/>
+                <constraint firstAttribute="bottom" secondItem="n5h-BF-t5S" secondAttribute="bottom" id="7Uy-TV-1tk"/>
+                <constraint firstItem="n5h-BF-t5S" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BUm-hH-DWJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n5h-BF-t5S" secondAttribute="trailing" id="LEm-HQ-NI0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="useShadownView" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="125.95419847328243" y="126.40845070422536"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="bEU-Q2-MlU">
+            <size key="intrinsicContentSize" width="108" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

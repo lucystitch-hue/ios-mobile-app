@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WarningV2VC" customModule="IMT_TEST" customModuleProvider="target">
+            <connections>
+                <outlet property="cstHeightIcon" destination="KeZ-6a-lqH" id="GxI-2e-yA4"/>
+                <outlet property="ivIcon" destination="IKC-2s-6KC" id="eja-2Y-c2L"/>
+                <outlet property="lblDescription" destination="WX8-Xm-ZkY" id="Vhv-5M-v0g"/>
+                <outlet property="lblTitle" destination="gYU-Iz-elP" id="0fV-Mg-JTs"/>
+                <outlet property="svButtonGroup" destination="WuO-Cg-vWL" id="evB-uf-diV"/>
+                <outlet property="svContainer" destination="Ey5-gE-d8F" id="vIO-v6-p1Y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oe8-7b-eSF">
+                    <rect key="frame" x="30" y="310.33333333333337" width="333" height="256.33333333333337"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Ey5-gE-d8F">
+                            <rect key="frame" x="15" y="25" width="303" height="222"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_warningQrCode" translatesAutoresizingMaskIntoConstraints="NO" id="IKC-2s-6KC">
+                                    <rect key="frame" x="65.666666666666671" y="0.0" width="171.66666666666663" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="KeZ-6a-lqH"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="QR読み取りエラー" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYU-Iz-elP">
+                                    <rect key="frame" x="73.666666666666686" y="94" width="156" height="18"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="20歳未満の方はこの機能をご利用できません。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX8-Xm-ZkY">
+                                    <rect key="frame" x="23.666666666666686" y="136" width="256" height="12"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="largeSize" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="mediumWeight" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="mediumSize" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WuO-Cg-vWL">
+                                    <rect key="frame" x="68.333333333333329" y="172" width="166.33333333333337" height="50"/>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstItem="WuO-Cg-vWL" firstAttribute="width" secondItem="oe8-7b-eSF" secondAttribute="width" multiplier="0.5" id="V2i-oA-WV8"/>
+                        <constraint firstAttribute="bottom" secondItem="Ey5-gE-d8F" secondAttribute="bottom" constant="25" id="VIf-39-dD1"/>
+                        <constraint firstItem="Ey5-gE-d8F" firstAttribute="leading" secondItem="oe8-7b-eSF" secondAttribute="leading" constant="15" id="aQt-LO-57O"/>
+                        <constraint firstItem="Ey5-gE-d8F" firstAttribute="top" secondItem="oe8-7b-eSF" secondAttribute="top" constant="25" id="olx-Gq-kiK"/>
+                        <constraint firstAttribute="trailing" secondItem="Ey5-gE-d8F" secondAttribute="trailing" constant="15" id="sjE-Pv-raW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="manualRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="0.78000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oe8-7b-eSF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ZIN-GO-KL1"/>
+                <constraint firstItem="oe8-7b-eSF" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="jaN-0l-rZl"/>
+                <constraint firstItem="oe8-7b-eSF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="mwo-Bd-iXo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="-32"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_warningQrCode" width="171.66667175292969" height="155.66667175292969"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

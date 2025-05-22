@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BASE_URL</key>
+	<string>${BASE_URL}</string>
+	<key>BASE_URL_HOLIDAY</key>
+	<string>${BASE_URL_HOLIDAY}</string>
+	<key>BASE_URL_MAIN</key>
+	<string>${BASE_URL_MAIN}</string>
+	<key>BASE_URL_POSTCODE</key>
+	<string>${BASE_URL_POSTCODE}</string>
+	<key>BASE_URL_RSS</key>
+	<string>${BASE_URL_RSS}</string>
+	<key>DOMAIN</key>
+	<string>${DOMAIN}</string>
+	<key>DOMAIN_HOLIDAY</key>
+	<string>${DOMAIN_HOLIDAY}</string>
+	<key>DOMAIN_MAIN</key>
+	<string>${DOMAIN_MAIN}</string>
+	<key>DOMAIN_POSTCODE</key>
+	<string>${DOMAIN_POSTCODE}</string>
+	<key>DOMAIN_RSS</key>
+	<string>${DOMAIN_RSS}</string>
+	<key>ENVIROMENT</key>
+	<string>${ENVIROMENT}</string>
+	<key>FLYERS_APP_DEV_KEY</key>
+	<string>${FLYERS_APP_DEV_KEY}</string>
+	<key>APPLE_APP_ID</key>
+	<string>${APPLE_APP_ID}</string>
+	<key>FacebookAppID</key>
+	<string></string>
+	<key>FacebookClientToken</key>
+	<string></string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>instagram</string>
+		<string>fb</string>
+		<string>twitter</string>
+		<string>line</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>PROTOCOL</key>
+	<string>${PROTOCOL}</string>
+	<key>PROTOCOL_HOLIDAY</key>
+	<string>${PROTOCOL_HOLIDAY}</string>
+	<key>PROTOCOL_MAIN</key>
+	<string>${PROTOCOL_MAIN}</string>
+	<key>PROTOCOL_POSTCODE</key>
+	<string>${PROTOCOL_POSTCODE}</string>
+	<key>PROTOCOL_RSS</key>
+	<string>${PROTOCOL_RSS}</string>
+	<key>SAFT_KEY</key>
+	<string>${AES_KEY}</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UISceneConfigurations</key>
+		<dict/>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>NSFaceIDUsageDescription</key>
+	<string>$(PRODUCT_NAME) Authentication with TouchId or FaceID</string>
+</dict>
+</plist>

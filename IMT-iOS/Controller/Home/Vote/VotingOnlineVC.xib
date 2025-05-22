@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VotingOnlineVC" customModule="IMT_TEST" customModuleProvider="target">
+            <connections>
+                <outlet property="btnDelete" destination="8dZ-w4-kI6" id="0zW-JQ-GIG"/>
+                <outlet property="lbButton" destination="6Fb-vi-0pI" id="Mbm-Gq-YTT"/>
+                <outlet property="lbWarning" destination="6ft-Xj-Zej" id="YHw-3Z-nIX"/>
+                <outlet property="tfIPatId" destination="Kac-hN-tG9" id="xwy-pa-3OR"/>
+                <outlet property="tfIPatPar" destination="2xe-22-d49" id="n2K-cV-t6k"/>
+                <outlet property="tfIPatPass" destination="if8-fO-dd6" id="gpK-3c-H9p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewNumberEtc" destination="vkn-Zj-dbO" id="hNP-BW-imU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZK-VF-7AO">
+                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKI-Io-pIx">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="566"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加入者番号（利用者番号）" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfC-dm-HMD" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                    <rect key="frame" x="44" y="29" width="302" height="14"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.45882352939999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hg-aC-lME" userLabel="View1" customClass="IMTInnerShadowView" customModule="IMT_TEST" customModuleProvider="target">
+                                    <rect key="frame" x="44" y="57" width="302" height="40"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kac-hN-tG9" customClass="IMTTextField" customModule="IMT_TEST" customModuleProvider="target">
+                                            <rect key="frame" x="10" y="0.0" width="282" height="40"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="textFieldDidChange:" destination="-1" eventType="editingChanged" id="WtO-Ug-QZS"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="9Rt-ih-osq"/>
+                                        <constraint firstItem="Kac-hN-tG9" firstAttribute="leading" secondItem="4hg-aC-lME" secondAttribute="leading" constant="10" id="O5P-G4-dCk"/>
+                                        <constraint firstAttribute="bottom" secondItem="Kac-hN-tG9" secondAttribute="bottom" id="Zco-bB-mNf"/>
+                                        <constraint firstAttribute="trailing" secondItem="Kac-hN-tG9" secondAttribute="trailing" constant="10" id="vcJ-oz-cAI"/>
+                                        <constraint firstItem="Kac-hN-tG9" firstAttribute="top" secondItem="4hg-aC-lME" secondAttribute="top" id="yEI-qm-Z1J"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="useShadown" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="useShadownView" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暗証番号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHi-9l-F50" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                    <rect key="frame" x="44" y="121" width="302" height="14"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.45882352939999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRm-Mk-iYs" userLabel="View2" customClass="IMTInnerShadowView" customModule="IMT_TEST" customModuleProvider="target">
+                                    <rect key="frame" x="44" y="149" width="302" height="40"/>
+                                    <subviews>
+                                        <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="if8-fO-dd6">
+                                            <rect key="frame" x="10" y="0.0" width="282" height="40"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            <connections>
+                                                <action selector="textFieldDidChange:" destination="-1" eventType="editingChanged" id="1LG-gi-DRd"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="39D-zs-JZF"/>
+                                        <constraint firstItem="if8-fO-dd6" firstAttribute="top" secondItem="zRm-Mk-iYs" secondAttribute="top" id="SmQ-ID-39K"/>
+                                        <constraint firstAttribute="trailing" secondItem="if8-fO-dd6" secondAttribute="trailing" constant="10" id="TMU-30-kiG"/>
+                                        <constraint firstAttribute="bottom" secondItem="if8-fO-dd6" secondAttribute="bottom" id="VJO-Zf-9le"/>
+                                        <constraint firstItem="if8-fO-dd6" firstAttribute="leading" secondItem="zRm-Mk-iYs" secondAttribute="leading" constant="10" id="zVR-xZ-AHz"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="useShadown" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="useShadownView" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P-ARS番号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rig-FU-129" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                    <rect key="frame" x="44" y="213" width="302" height="14"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.45882352939999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Oa-Jz-y73" userLabel="View3" customClass="IMTInnerShadowView" customModule="IMT_TEST" customModuleProvider="target">
+                                    <rect key="frame" x="44" y="241" width="302" height="40"/>
+                                    <subviews>
+                                        <textField opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xe-22-d49">
+                                            <rect key="frame" x="10" y="0.0" width="282" height="40"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="textFieldDidChange:" destination="-1" eventType="editingChanged" id="DVB-LU-qL1"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="2xe-22-d49" secondAttribute="bottom" id="2vb-sg-GqA"/>
+                                        <constraint firstAttribute="height" constant="40" id="OiH-vV-Lkd"/>
+                                        <constraint firstItem="2xe-22-d49" firstAttribute="leading" secondItem="7Oa-Jz-y73" secondAttribute="leading" constant="10" id="YTJ-zX-fQo"/>
+                                        <constraint firstAttribute="trailing" secondItem="2xe-22-d49" secondAttribute="trailing" constant="10" id="fig-98-KX8"/>
+                                        <constraint firstItem="2xe-22-d49" firstAttribute="top" secondItem="7Oa-Jz-y73" secondAttribute="top" id="qTm-EV-52X"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="useShadown" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="useShadownView" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wbz-Pc-gNL" customClass="IMTView" customModule="IMT_TEST" customModuleProvider="target">
+                                    <rect key="frame" x="44" y="311" width="302" height="52"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fb-vi-0pI" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="302" height="52"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="15"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="largeSize" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="semiBoldWeight" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fI-MO-o0J" customClass="IMTButton" customModule="IMT_TEST" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="302" height="52"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="largeSize" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="mediumWeight" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="actionRegister:" destination="-1" eventType="touchUpInside" id="cUn-aG-fuv"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.91764705879999997" green="0.39607843139999999" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="8fI-MO-o0J" firstAttribute="centerY" secondItem="Wbz-Pc-gNL" secondAttribute="centerY" id="DJN-UK-oV6"/>
+                                        <constraint firstItem="8fI-MO-o0J" firstAttribute="centerX" secondItem="Wbz-Pc-gNL" secondAttribute="centerX" id="PgF-Fc-zdZ"/>
+                                        <constraint firstAttribute="height" constant="52" id="UMy-m5-ynL"/>
+                                        <constraint firstAttribute="trailing" secondItem="6Fb-vi-0pI" secondAttribute="trailing" id="Xok-cG-KgI"/>
+                                        <constraint firstAttribute="bottom" secondItem="6Fb-vi-0pI" secondAttribute="bottom" id="Znr-rx-PZJ"/>
+                                        <constraint firstItem="8fI-MO-o0J" firstAttribute="width" secondItem="Wbz-Pc-gNL" secondAttribute="width" id="hMC-ho-28B"/>
+                                        <constraint firstItem="6Fb-vi-0pI" firstAttribute="leading" secondItem="Wbz-Pc-gNL" secondAttribute="leading" id="mQD-3K-F9j"/>
+                                        <constraint firstItem="8fI-MO-o0J" firstAttribute="height" secondItem="Wbz-Pc-gNL" secondAttribute="height" id="s7l-ft-JOv"/>
+                                        <constraint firstItem="6Fb-vi-0pI" firstAttribute="top" secondItem="Wbz-Pc-gNL" secondAttribute="top" id="vlW-DP-gCo"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="manualRadius">
+                                            <real key="value" value="8.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ern-xY-H6K">
+                                    <rect key="frame" x="44" y="383" width="302" height="133"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkn-Zj-dbO">
+                                            <rect key="frame" x="0.0" y="0.0" width="302" height="27"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByI-EQ-F7P">
+                                                    <rect key="frame" x="31" y="0.0" width="240" height="27"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="※加入者番号等が不明な方はこちら">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.19608" green="0.19608" blue="0.19608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="15" name="HiraginoSans-W6"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                                <color key="NSUnderlineColor" red="0.19608" green="0.19608" blue="0.19608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9c-jQ-Qqt">
+                                                    <rect key="frame" x="31" y="0.0" width="240" height="27"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionNumberEtc:" destination="-1" eventType="touchUpInside" id="04c-sw-g1M"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="d9c-jQ-Qqt" firstAttribute="centerX" secondItem="vkn-Zj-dbO" secondAttribute="centerX" id="75i-Gi-wxI"/>
+                                                <constraint firstItem="d9c-jQ-Qqt" firstAttribute="width" secondItem="ByI-EQ-F7P" secondAttribute="width" id="KxB-sB-OAh"/>
+                                                <constraint firstItem="d9c-jQ-Qqt" firstAttribute="height" secondItem="ByI-EQ-F7P" secondAttribute="height" id="RdJ-LZ-N2a"/>
+                                                <constraint firstItem="ByI-EQ-F7P" firstAttribute="top" secondItem="vkn-Zj-dbO" secondAttribute="top" id="XPD-oC-lb9"/>
+                                                <constraint firstItem="d9c-jQ-Qqt" firstAttribute="centerY" secondItem="vkn-Zj-dbO" secondAttribute="centerY" id="gM3-WL-vI4"/>
+                                                <constraint firstItem="ByI-EQ-F7P" firstAttribute="centerY" secondItem="vkn-Zj-dbO" secondAttribute="centerY" id="iwA-8o-lGM"/>
+                                                <constraint firstItem="ByI-EQ-F7P" firstAttribute="centerX" secondItem="vkn-Zj-dbO" secondAttribute="centerX" id="wzh-vJ-IyI"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dZ-w4-kI6" customClass="IMTBorderButton" customModule="IMT_TEST" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="47" width="302" height="52"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="bvC-4h-KF2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="削除する">
+                                                <color key="titleColor" red="0.91764705879999997" green="0.39607843139999999" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="largeSize" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.91764705879999997" green="0.39607843139999999" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="semiBoldWeight" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="actionDelete:" destination="-1" eventType="touchUpInside" id="79g-vb-luN"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ft-Xj-Zej" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="119" width="302" height="14"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="14"/>
+                                            <color key="textColor" red="0.75686274509803919" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="IfC-dm-HMD" secondAttribute="trailing" constant="44" id="0rb-0q-2a9"/>
+                                <constraint firstItem="rig-FU-129" firstAttribute="leading" secondItem="RKI-Io-pIx" secondAttribute="leading" constant="44" id="4qk-p0-Sdo"/>
+                                <constraint firstItem="Wbz-Pc-gNL" firstAttribute="leading" secondItem="RKI-Io-pIx" secondAttribute="leading" constant="44" id="7kS-aP-8D6"/>
+                                <constraint firstItem="IfC-dm-HMD" firstAttribute="top" secondItem="RKI-Io-pIx" secondAttribute="top" constant="29" id="BE4-I2-tN6"/>
+                                <constraint firstItem="IfC-dm-HMD" firstAttribute="leading" secondItem="RKI-Io-pIx" secondAttribute="leading" constant="44" id="DbZ-Zf-lCv"/>
+                                <constraint firstItem="zRm-Mk-iYs" firstAttribute="leading" secondItem="RKI-Io-pIx" secondAttribute="leading" constant="44" id="EVj-QM-IMT"/>
+                                <constraint firstAttribute="trailing" secondItem="7Oa-Jz-y73" secondAttribute="trailing" constant="44" id="LDL-UT-0X5"/>
+                                <constraint firstAttribute="trailing" secondItem="4hg-aC-lME" secondAttribute="trailing" constant="44" id="V9s-ob-JDP"/>
+                                <constraint firstItem="zRm-Mk-iYs" firstAttribute="top" secondItem="mHi-9l-F50" secondAttribute="bottom" constant="14" id="Vo7-jR-c3q"/>
+                                <constraint firstItem="mHi-9l-F50" firstAttribute="top" secondItem="4hg-aC-lME" secondAttribute="bottom" constant="24" id="XbY-h6-IzP"/>
+                                <constraint firstAttribute="trailing" secondItem="zRm-Mk-iYs" secondAttribute="trailing" constant="44" id="YGS-Yt-Lgr"/>
+                                <constraint firstAttribute="trailing" secondItem="rig-FU-129" secondAttribute="trailing" constant="44" id="Yox-kp-GOb"/>
+                                <constraint firstItem="Wbz-Pc-gNL" firstAttribute="top" secondItem="7Oa-Jz-y73" secondAttribute="bottom" constant="30" id="a1v-kZ-FK7"/>
+                                <constraint firstItem="4hg-aC-lME" firstAttribute="top" secondItem="IfC-dm-HMD" secondAttribute="bottom" constant="14" id="aUU-gh-gZp"/>
+                                <constraint firstItem="ern-xY-H6K" firstAttribute="leading" secondItem="RKI-Io-pIx" secondAttribute="leading" constant="44" id="ayN-nw-j8h"/>
+                                <constraint firstItem="4hg-aC-lME" firstAttribute="leading" secondItem="RKI-Io-pIx" secondAttribute="leading" constant="44" id="eHQ-UN-WRc"/>
+                                <constraint firstAttribute="trailing" secondItem="Wbz-Pc-gNL" secondAttribute="trailing" constant="44" id="eMZ-bJ-9n9"/>
+                                <constraint firstItem="7Oa-Jz-y73" firstAttribute="leading" secondItem="RKI-Io-pIx" secondAttribute="leading" constant="44" id="gbb-p1-9NM"/>
+                                <constraint firstAttribute="trailing" secondItem="mHi-9l-F50" secondAttribute="trailing" constant="44" id="jZW-wg-7SI"/>
+                                <constraint firstAttribute="bottom" secondItem="ern-xY-H6K" secondAttribute="bottom" constant="50" id="myO-zu-e3p"/>
+                                <constraint firstItem="ern-xY-H6K" firstAttribute="top" secondItem="Wbz-Pc-gNL" secondAttribute="bottom" constant="20" id="q48-tZ-uUU"/>
+                                <constraint firstItem="rig-FU-129" firstAttribute="top" secondItem="zRm-Mk-iYs" secondAttribute="bottom" constant="24" id="rX5-rF-X7M"/>
+                                <constraint firstItem="mHi-9l-F50" firstAttribute="leading" secondItem="RKI-Io-pIx" secondAttribute="leading" constant="44" id="rja-kC-SFy"/>
+                                <constraint firstAttribute="trailing" secondItem="ern-xY-H6K" secondAttribute="trailing" constant="44" id="vOl-BY-QCT"/>
+                                <constraint firstItem="7Oa-Jz-y73" firstAttribute="top" secondItem="rig-FU-129" secondAttribute="bottom" constant="14" id="zsI-fR-kaX"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="CXv-YR-XLf" firstAttribute="leading" secondItem="RKI-Io-pIx" secondAttribute="leading" id="2WN-HR-7f1"/>
+                        <constraint firstItem="RKI-Io-pIx" firstAttribute="trailing" secondItem="CXv-YR-XLf" secondAttribute="trailing" id="8xy-nP-mNP"/>
+                        <constraint firstItem="RKI-Io-pIx" firstAttribute="bottom" secondItem="CXv-YR-XLf" secondAttribute="bottom" id="aA8-eh-XGW"/>
+                        <constraint firstItem="CXv-YR-XLf" firstAttribute="top" secondItem="RKI-Io-pIx" secondAttribute="top" id="g2x-mC-43W"/>
+                        <constraint firstItem="RKI-Io-pIx" firstAttribute="width" secondItem="FIC-sU-eUv" secondAttribute="width" id="o1S-dI-Z0Q"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="CXv-YR-XLf"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="FIC-sU-eUv"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lZK-VF-7AO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0TI-pZ-SFM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lZK-VF-7AO" secondAttribute="trailing" id="Nk2-vn-R9A"/>
+                <constraint firstItem="lZK-VF-7AO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="PA8-KR-dW5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lZK-VF-7AO" secondAttribute="bottom" id="yid-nb-V6O"/>
+            </constraints>
+            <point key="canvasLocation" x="78" y="-11"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="6Fb-vi-0pI"/>
+        <designable name="6ft-Xj-Zej">
+            <size key="intrinsicContentSize" width="38" height="14"/>
+        </designable>
+        <designable name="8dZ-w4-kI6">
+            <size key="intrinsicContentSize" width="60" height="27"/>
+        </designable>
+        <designable name="8fI-MO-o0J">
+            <size key="intrinsicContentSize" width="30" height="27"/>
+        </designable>
+        <designable name="IfC-dm-HMD">
+            <size key="intrinsicContentSize" width="168" height="14"/>
+        </designable>
+        <designable name="Kac-hN-tG9">
+            <size key="intrinsicContentSize" width="33" height="34"/>
+        </designable>
+        <designable name="mHi-9l-F50">
+            <size key="intrinsicContentSize" width="56" height="14"/>
+        </designable>
+        <designable name="rig-FU-129">
+            <size key="intrinsicContentSize" width="78" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

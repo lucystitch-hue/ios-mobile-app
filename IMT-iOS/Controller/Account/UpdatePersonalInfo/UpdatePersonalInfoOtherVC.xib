@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdatePersonalInfoOtherVC" customModule="IMT_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="btnNext" destination="nm0-Z4-dn2" id="qTb-ms-qiH"/>
+                <outlet property="btnSkip" destination="45q-gU-sar" id="Rh0-Gz-UPY"/>
+                <outlet property="cstHeightTableAnswer" destination="Aqj-k7-Vx5" id="oII-1j-BvE"/>
+                <outlet property="lblPage" destination="7De-i8-tft" id="cgi-Xj-QMd"/>
+                <outlet property="lblTitle" destination="EtY-xq-KEZ" id="pr8-nv-8bH"/>
+                <outlet property="tbvAnswer" destination="y0g-BK-wkJ" id="vjq-a4-oMU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="Zi6-sI-a1i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGS-nI-CqS">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pk-Aw-pQc">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="726"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="2/3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7De-i8-tft" customClass="IMTLabel" customModule="IMT_iOS" customModuleProvider="target">
+                                    <rect key="frame" x="326" y="8" width="25" height="14"/>
+                                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="14"/>
+                                    <color key="textColor" red="0.61960784313725492" green="0.62745098039215685" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtY-xq-KEZ" customClass="IMTLabel" customModule="IMT_iOS" customModuleProvider="target">
+                                    <rect key="frame" x="45" y="35" width="303" height="15"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="利用中サービス">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.45882352941176469" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HiraginoSans-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nm0-Z4-dn2" customClass="IMTButton" customModule="IMT_iOS" customModuleProvider="target">
+                                    <rect key="frame" x="47.666666666666657" y="597" width="298" height="52"/>
+                                    <color key="backgroundColor" red="0.91764705879999997" green="0.39607843139999999" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="52" id="Bxo-jt-WFJ"/>
+                                        <constraint firstAttribute="width" constant="298" id="CK1-bz-S5t"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="次へ">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="actionNext:" destination="-1" eventType="touchUpInside" id="yWu-ig-WUM"/>
+                                    </connections>
+                                </button>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y0g-BK-wkJ">
+                                    <rect key="frame" x="45" y="63" width="303" height="494"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="494" id="Aqj-k7-Vx5"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="s0h-w9-nyL"/>
+                                        <outlet property="delegate" destination="-1" id="tHU-iq-kRf"/>
+                                    </connections>
+                                </tableView>
+                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45q-gU-sar">
+                                    <rect key="frame" x="311" y="649" width="52" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="0H8-Uk-DfN"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="スキップ">
+                                        <color key="titleColor" red="0.61960784313725492" green="0.62745098039215685" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionSkip:" destination="-1" eventType="touchUpInside" id="Mb6-5G-qEk"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="y0g-BK-wkJ" firstAttribute="top" secondItem="EtY-xq-KEZ" secondAttribute="bottom" constant="13" id="79Z-ju-EzF"/>
+                                <constraint firstItem="EtY-xq-KEZ" firstAttribute="top" secondItem="7De-i8-tft" secondAttribute="bottom" constant="13" id="Ei4-x9-pkm"/>
+                                <constraint firstAttribute="trailing" secondItem="EtY-xq-KEZ" secondAttribute="trailing" constant="45" id="OSD-1w-5pW"/>
+                                <constraint firstItem="7De-i8-tft" firstAttribute="top" secondItem="9pk-Aw-pQc" secondAttribute="top" constant="8" id="Pk1-Yb-bun"/>
+                                <constraint firstAttribute="bottom" secondItem="45q-gU-sar" secondAttribute="bottom" constant="42" id="SSO-BP-MuU"/>
+                                <constraint firstItem="y0g-BK-wkJ" firstAttribute="centerX" secondItem="9pk-Aw-pQc" secondAttribute="centerX" id="UUI-jA-DqC"/>
+                                <constraint firstItem="EtY-xq-KEZ" firstAttribute="leading" secondItem="9pk-Aw-pQc" secondAttribute="leading" constant="45" id="XJ0-jk-jyC"/>
+                                <constraint firstItem="y0g-BK-wkJ" firstAttribute="leading" secondItem="9pk-Aw-pQc" secondAttribute="leading" constant="45" id="bIk-z4-ajP"/>
+                                <constraint firstItem="nm0-Z4-dn2" firstAttribute="centerX" secondItem="9pk-Aw-pQc" secondAttribute="centerX" id="e4A-6w-MJj"/>
+                                <constraint firstItem="nm0-Z4-dn2" firstAttribute="top" secondItem="y0g-BK-wkJ" secondAttribute="bottom" constant="40" id="ifU-au-arv"/>
+                                <constraint firstItem="45q-gU-sar" firstAttribute="top" secondItem="nm0-Z4-dn2" secondAttribute="bottom" id="tSU-Kk-gSw"/>
+                                <constraint firstAttribute="trailing" secondItem="7De-i8-tft" secondAttribute="trailing" constant="42" id="vIS-4b-7ba"/>
+                                <constraint firstAttribute="trailing" secondItem="45q-gU-sar" secondAttribute="trailing" constant="30" id="ylf-Hf-iWp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="9pk-Aw-pQc" firstAttribute="leading" secondItem="MGS-nI-CqS" secondAttribute="leading" id="Lbk-mh-msq"/>
+                        <constraint firstItem="9pk-Aw-pQc" firstAttribute="centerX" secondItem="MGS-nI-CqS" secondAttribute="centerX" id="lCI-dh-58R"/>
+                        <constraint firstAttribute="trailing" secondItem="9pk-Aw-pQc" secondAttribute="trailing" id="mG1-pk-e5e"/>
+                        <constraint firstItem="9pk-Aw-pQc" firstAttribute="top" secondItem="MGS-nI-CqS" secondAttribute="top" id="pvH-sX-LKe"/>
+                        <constraint firstAttribute="bottom" secondItem="9pk-Aw-pQc" secondAttribute="bottom" id="qRl-KW-1yf"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="MGS-nI-CqS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Fj-bd-5t9"/>
+                <constraint firstItem="MGS-nI-CqS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Eyf-bM-ing"/>
+                <constraint firstAttribute="trailing" secondItem="MGS-nI-CqS" secondAttribute="trailing" id="nzc-Qa-vVh"/>
+                <constraint firstAttribute="bottom" secondItem="MGS-nI-CqS" secondAttribute="bottom" id="z0j-ul-xdW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-32.394366197183103"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="7De-i8-tft">
+            <size key="intrinsicContentSize" width="25" height="14"/>
+        </designable>
+        <designable name="EtY-xq-KEZ">
+            <size key="intrinsicContentSize" width="105" height="15"/>
+        </designable>
+        <designable name="nm0-Z4-dn2">
+            <size key="intrinsicContentSize" width="30" height="26"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

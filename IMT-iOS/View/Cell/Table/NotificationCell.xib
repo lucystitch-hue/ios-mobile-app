@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="68" id="KGk-i7-Jjw" customClass="NotificationCell" customModule="IMT_TEST" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaC-TN-5aJ" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                        <rect key="frame" x="344" y="13.999999999999998" width="50" height="16.333333333333329"/>
+                        <attributedString key="attributedText">
+                            <fragment content="9">
+                                <attributes>
+                                    <color key="NSColor" red="0.61960784313725492" green="0.62745098039215685" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="時間前">
+                                <attributes>
+                                    <color key="NSColor" red="0.61960784313725492" green="0.62745098039215685" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="14" name="HiraginoSans-W7"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ue6-ce-jUR" customClass="IMTView" customModule="IMT_TEST" customModuleProvider="target">
+                        <rect key="frame" x="76.333333333333329" y="16" width="50" height="17"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未読" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKx-nP-lYg" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                                <rect key="frame" x="14" y="3" width="22" height="11"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75686274509803919" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iKx-nP-lYg" firstAttribute="centerY" secondItem="ue6-ce-jUR" secondAttribute="centerY" id="OyY-kE-M6n"/>
+                            <constraint firstAttribute="height" constant="17" id="WEi-aM-YFJ"/>
+                            <constraint firstAttribute="width" constant="50" id="vFS-WL-EBF"/>
+                            <constraint firstItem="iKx-nP-lYg" firstAttribute="centerX" secondItem="ue6-ce-jUR" secondAttribute="centerX" id="zfY-VO-jCw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="ic_clock" translatesAutoresizingMaskIntoConstraints="NO" id="JVT-zT-4qu">
+                        <rect key="frame" x="330" y="16.666666666666668" width="11" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="D01-k2-yOg"/>
+                            <constraint firstAttribute="width" constant="11" id="hOO-sx-T1D"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="ga con" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywg-vM-Fy6" customClass="IMTLabel" customModule="IMT_TEST" customModuleProvider="target">
+                        <rect key="frame" x="18.000000000000004" y="16" width="48.333333333333343" height="36"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="14"/>
+                        <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JVT-zT-4qu" firstAttribute="centerY" secondItem="VaC-TN-5aJ" secondAttribute="centerY" id="BOC-SY-et8"/>
+                    <constraint firstItem="ywg-vM-Fy6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="DRv-6g-NX9"/>
+                    <constraint firstItem="VaC-TN-5aJ" firstAttribute="leading" secondItem="JVT-zT-4qu" secondAttribute="trailing" constant="3" id="SvF-w0-iI4"/>
+                    <constraint firstItem="ywg-vM-Fy6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XUx-Gp-iEy"/>
+                    <constraint firstAttribute="trailing" secondItem="VaC-TN-5aJ" secondAttribute="trailing" constant="20" id="glO-j9-HwM"/>
+                    <constraint firstItem="ywg-vM-Fy6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="m10-cG-dLe"/>
+                    <constraint firstItem="ue6-ce-jUR" firstAttribute="top" secondItem="ywg-vM-Fy6" secondAttribute="top" id="oIf-Np-fNF"/>
+                    <constraint firstItem="VaC-TN-5aJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="pst-Zw-vTc"/>
+                    <constraint firstItem="ue6-ce-jUR" firstAttribute="leading" secondItem="ywg-vM-Fy6" secondAttribute="trailing" constant="10" id="qZo-rd-ei9"/>
+                    <constraint firstItem="JVT-zT-4qu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ue6-ce-jUR" secondAttribute="trailing" constant="20" id="xg3-g8-RkY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cstWidthBackgroundRead" destination="vFS-WL-EBF" id="wY4-Vt-aOb"/>
+                <outlet property="lblContent" destination="ywg-vM-Fy6" id="NKq-RU-yWq"/>
+                <outlet property="lblDate" destination="VaC-TN-5aJ" id="rxl-3U-Tfo"/>
+                <outlet property="lblRead" destination="iKx-nP-lYg" id="K2L-Fw-0zg"/>
+                <outlet property="vBackgroundRead" destination="ue6-ce-jUR" id="Odw-0z-LA6"/>
+            </connections>
+            <point key="canvasLocation" x="221.37404580152671" y="5.6338028169014089"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="VaC-TN-5aJ">
+            <size key="intrinsicContentSize" width="50" height="16.333333333333332"/>
+        </designable>
+        <designable name="iKx-nP-lYg">
+            <size key="intrinsicContentSize" width="22" height="11"/>
+        </designable>
+        <designable name="ywg-vM-Fy6">
+            <size key="intrinsicContentSize" width="48.333333333333336" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_clock" width="20" height="20"/>
+    </resources>
+</document>

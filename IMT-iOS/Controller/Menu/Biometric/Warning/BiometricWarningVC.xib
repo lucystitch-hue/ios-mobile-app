@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BiometricWarningVC" customModule="IMT_iOS_DEV" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dov-KT-0UW" customClass="IMTView" customModule="IMT_iOS_DEV" customModuleProvider="target">
+                    <rect key="frame" x="19.666666666666657" y="320.33333333333331" width="353.66666666666674" height="236.33333333333331"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iZV-9c-HOl">
+                            <rect key="frame" x="20" y="0.0" width="313.66666666666669" height="236.33333333333334"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2a5-e5-GgN" userLabel="vSpace">
+                                    <rect key="frame" x="0.0" y="0.0" width="313.66666666666669" height="30"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="Pnt-lk-yk2"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="エラー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKg-al-px0" customClass="IMTLabel" customModule="IMT_iOS_DEV" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="30" width="313.66666666666669" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="mediumSize" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="boldWeight" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="largeSize" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="largerSize" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHB-2C-5Tf" userLabel="vSpace">
+                                    <rect key="frame" x="0.0" y="50.333333333333371" width="313.66666666666669" height="30"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="fH7-ek-c52"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7M-ol-N1o">
+                                    <rect key="frame" x="0.0" y="80.333333333333371" width="313.66666666666669" height="68"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="端末の設定がOFFになっているた">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="16" name="HiraginoSans-W6"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <font key="NSOriginalFont" size="12" name="Times-Roman"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" lineSpacing="10" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="12" name="Times-Roman"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" lineSpacing="10" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">め生体認証を利用できません。
+端末の設定をご確認ください。</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="16" name="HiraginoSans-W6"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <font key="NSOriginalFont" size="12" name="Times-Roman"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" lineSpacing="10" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWV-yP-SpQ" userLabel="vSpace">
+                                    <rect key="frame" x="0.0" y="148.33333333333337" width="313.66666666666669" height="24"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="lnM-AR-f83"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qdn-nN-yUD">
+                                    <rect key="frame" x="0.0" y="172.33333333333337" width="313.66666666666669" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jE7-gf-zC1" customClass="IMTBorderButton" customModule="IMT_iOS_DEV" customModuleProvider="target">
+                                            <rect key="frame" x="57" y="0.0" width="200" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="Ybu-NC-BtP"/>
+                                                <constraint firstAttribute="width" constant="200" id="sfM-GY-g7E"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                            <color key="tintColor" red="0.91764705879999997" green="0.39607843139999999" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="閉じる">
+                                                <color key="titleColor" red="0.14509803921568626" green="0.37647058823529411" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.14509803921568626" green="0.37647058823529411" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="largeSize" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="boldWeight" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="actionClose:" destination="-1" eventType="touchUpInside" id="bK2-1B-RCR"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="jE7-gf-zC1" firstAttribute="top" secondItem="Qdn-nN-yUD" secondAttribute="top" id="oBd-gK-8Xb"/>
+                                        <constraint firstAttribute="bottom" secondItem="jE7-gf-zC1" secondAttribute="bottom" id="pJM-Ue-6A9"/>
+                                        <constraint firstItem="jE7-gf-zC1" firstAttribute="centerX" secondItem="Qdn-nN-yUD" secondAttribute="centerX" id="v2f-b5-nMO"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-M7-XCt" userLabel="vSpace">
+                                    <rect key="frame" x="0.0" y="212.33333333333331" width="313.66666666666669" height="24"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="2nR-PW-db8"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="iZV-9c-HOl" secondAttribute="bottom" id="6Yp-K8-jp6"/>
+                        <constraint firstAttribute="trailing" secondItem="iZV-9c-HOl" secondAttribute="trailing" constant="20" id="AFB-4R-AZn"/>
+                        <constraint firstItem="iZV-9c-HOl" firstAttribute="top" secondItem="Dov-KT-0UW" secondAttribute="top" id="bxz-Oj-Otf"/>
+                        <constraint firstItem="iZV-9c-HOl" firstAttribute="centerX" secondItem="Dov-KT-0UW" secondAttribute="centerX" id="fB0-sn-ZWz"/>
+                        <constraint firstItem="iZV-9c-HOl" firstAttribute="centerY" secondItem="Dov-KT-0UW" secondAttribute="centerY" id="nU3-81-203"/>
+                        <constraint firstItem="iZV-9c-HOl" firstAttribute="leading" secondItem="Dov-KT-0UW" secondAttribute="leading" constant="20" id="pa4-ei-U5K"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="manualRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.231372565" green="0.231372565" blue="0.231372565" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Dov-KT-0UW" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="goF-Yq-pxi"/>
+                <constraint firstItem="Dov-KT-0UW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xTs-B0-YHZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="EKg-al-px0">
+            <size key="intrinsicContentSize" width="52" height="20.333333333333332"/>
+        </designable>
+        <designable name="jE7-gf-zC1">
+            <size key="intrinsicContentSize" width="42" height="26"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

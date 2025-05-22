@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WarningVC" customModule="IMT_TEST" customModuleProvider="target">
+            <connections>
+                <outlet property="btnDismiss" destination="WGa-1V-hlw" id="Qob-ru-fqV"/>
+                <outlet property="btnFilled" destination="blw-c0-1Js" id="wkx-YR-wet"/>
+                <outlet property="cstHeightIcon" destination="nB7-oD-BDa" id="7Lt-W1-Og1"/>
+                <outlet property="ivIcon" destination="GLt-QJ-OCO" id="ZGv-pR-N3D"/>
+                <outlet property="lblDescription" destination="Kcw-Y2-DDq" id="aad-aD-613"/>
+                <outlet property="lblTitle" destination="0dZ-8l-8Gr" id="y8m-d1-w6X"/>
+                <outlet property="svContainer" destination="pxq-Gw-eUZ" id="IlC-Ms-NvE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="681"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWE-MJ-TLT">
+                    <rect key="frame" x="30" y="197" width="294" height="312"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="pxq-Gw-eUZ">
+                            <rect key="frame" x="15" y="25" width="264" height="262"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_warningQrCode" translatesAutoresizingMaskIntoConstraints="NO" id="GLt-QJ-OCO">
+                                    <rect key="frame" x="46.333333333333329" y="0.0" width="171.66666666666669" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="nB7-oD-BDa"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR読み取りエラー" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dZ-8l-8Gr">
+                                    <rect key="frame" x="54" y="94" width="156" height="18"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20歳未満の方はこの機能をご利用できません。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcw-Y2-DDq">
+                                    <rect key="frame" x="4" y="136" width="256" height="12"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="largeSize" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="mediumWeight" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="mediumSize" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1RT-Vo-5E2">
+                                    <rect key="frame" x="58.666666666666686" y="172" width="147" height="90"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blw-c0-1Js" customClass="IMTButton" customModule="IMT_TEST" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="147" height="40"/>
+                                            <color key="backgroundColor" red="0.91764705882352937" green="0.396078431372549" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="1tw-vg-roW"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="actionClose:" destination="-1" eventType="touchUpInside" id="Htx-j0-f69"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGa-1V-hlw" customClass="IMTBorderButton" customModule="IMT_TEST" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="50" width="147" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="ORf-eu-T7s"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.91764705879999997" green="0.39607843139999999" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.91764705879999997" green="0.39607843139999999" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="largeSize" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="boldWeight" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="actionClose:" destination="-1" eventType="touchUpInside" id="NXl-Ku-Iu2"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstItem="blw-c0-1Js" firstAttribute="width" secondItem="fWE-MJ-TLT" secondAttribute="width" multiplier="0.5" id="566-RG-UmG"/>
+                        <constraint firstAttribute="trailing" secondItem="pxq-Gw-eUZ" secondAttribute="trailing" constant="15" id="RdD-AP-5ZA"/>
+                        <constraint firstItem="pxq-Gw-eUZ" firstAttribute="leading" secondItem="fWE-MJ-TLT" secondAttribute="leading" constant="15" id="RfR-i0-Mpk"/>
+                        <constraint firstAttribute="bottom" secondItem="pxq-Gw-eUZ" secondAttribute="bottom" constant="25" id="TJo-qL-ODD"/>
+                        <constraint firstItem="WGa-1V-hlw" firstAttribute="width" secondItem="fWE-MJ-TLT" secondAttribute="width" multiplier="0.5" id="et6-P7-Rws"/>
+                        <constraint firstItem="pxq-Gw-eUZ" firstAttribute="top" secondItem="fWE-MJ-TLT" secondAttribute="top" constant="25" id="hjU-Vy-qAy"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="manualRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="0.78000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fWE-MJ-TLT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="6rH-py-ef0"/>
+                <constraint firstItem="fWE-MJ-TLT" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="WAW-Xd-1NM"/>
+                <constraint firstItem="fWE-MJ-TLT" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="pv9-an-ZvV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="114.50381679389312" y="-6.6901408450704229"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="WGa-1V-hlw">
+            <size key="intrinsicContentSize" width="30" height="26"/>
+        </designable>
+        <designable name="blw-c0-1Js">
+            <size key="intrinsicContentSize" width="30" height="26"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_warningQrCode" width="171.66667175292969" height="155.66667175292969"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

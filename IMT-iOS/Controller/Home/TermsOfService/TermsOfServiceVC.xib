@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermsOfServiceVC" customModule="IMT_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="tvContent" destination="sXh-GW-UbB" id="s6W-Ja-SKR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXh-GW-UbB" customClass="IMTTextView" customModule="IMT_iOS" customModuleProvider="target">
+                    <rect key="frame" x="10" y="69" width="373" height="739"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <attributedString key="attributedText">
+                        <fragment content="IMT">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="15" name="HiraginoSans-W4"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="-0.049999999999998934" headIndent="14.65" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="アプリ利用規約">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="15" name="HiraginoSans-W4"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="15" name="Times-Roman"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="-0.049999999999998934" headIndent="14.65" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="15" name="HiraginoSans-W4"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="-0.049999999999998934" headIndent="14.65" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="2023">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="13" name="HiraginoSans-W4"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="-0.049999999999998934" headIndent="14.65" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="年●月●日">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="13" name="HiraginoSans-W4"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="15" name="Times-Roman"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="-0.049999999999998934" headIndent="14.65" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="13" name="HiraginoSans-W4"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="-0.049999999999998934" headIndent="14.65" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <mutableString key="content"> 
+第１条（利用規約）
+１IMTアプリ利用規約（以下「本規約」といいます。）は、日本中央競馬会（以下「IMT」といいます。）が提供するIMTアプリサービス（以下「本サービス」といいます。）の提供および利用の条件について定めます。
+２本規約は、利用者（第４条の規定に基づき本サービスの利用登録を受けた個人をいい、以下同様とします。）とIMTとの間の本サービス利用に係わる一切の関係に適用し、利用者が本サービスを利用するには、本規約に同意していただく必要があります。
+３IMTが本サービス上で規定する利用上の決まりも、名目に関わらず本規約の一部を構成するものとし、利用者はこれを了承するものとします。また利用者は、法令及びIMTの規程についても遵守するものとします。
+４IMTは、本規約を変更できるものとします。この場合において、利用者が本サービスを利用するには、変更後の規約に同意していただく必要があります。
+５IMTは、前項の規定により本規約を変更する場合には、本規約の変更の効力発効日を定め、変更後の規約内容とその効力発生時期を本サービスまたはIMTのホームページ等への掲載による公表その他適切な方法で〇週間前までに周知します。
+６変更後の本規約の効力発生日以降に、利用者が本サービスを利用したことをもって、利用者は本規約の変更に合意したものとみなします。
+第２条（サービスの提供等）
+１IMTは、本サービスにおいて、IMT主催の中央競馬に関する情報等を提供します。
+２IMTは、インターネットにより本サービスを提供します。
+３IMTは、20歳未満の利用者に対しては、本サービスの一部の機能の利用を制限します。なお、20歳未満の利用者に利用を制限する機能は、本サービスに掲載します。
+４IMTは、システムの保守や天災地変、火災、停電、通信混雑、通信障害、計算機障害、第三者からの不正アクセス、コンピュータウイルス感染、戦争、動乱、暴動、騒乱、労働争議等その他やむを得ない事由が発生した場合には、利用者に事前の通知をすることなく、本サービスを中断することがあります。
+５IMTは、必要に応じて本サービスの内容を事前の告知なく追加し、変更し、または削除することがあります。
+第３条 （利用料金）
+１本サービスの登録や利用にあたっての料金は無料です。なお、本サービスを利用するために必要な通信機器、ソフトウェア、通信環境その他これらに付随して必要となる全ての機器については、利用者が自己の費用と責任において用意するものとします。
+第４条 （利用登録）
+１利用申込者（本サービスの利用を希望する個人をいい、以下同様とします。）が本サービスを利用するには、本規約の内容を承諾しIMT所定の登録手続きをする必要があります。
+２利用申込者は、登録手続きにおいて、以下に掲げるものを登録するものとします。
+（１）氏名 
+（２）生年月日
+（３）メールアドレス
+（４）郵便番号
+（５）性別
+（６）職業
+（７）競馬歴
+（８）サービス利用時に個人認証を行うために必要なパスワード
+３IMTは、利用申込者が登録した前項各号の項目について確認し、次項各号に掲げる者に該当しないと認めた場合は、個人を識別する登録番号を付し、利用申込者の登録を承認するものとします。
+４IMTは、利用申込者が以下のいずれかに該当することが判明した場合はその者の登録を承認しないものとします。
+  （１） 第２項の登録内容（第１０条により変更された場合も含み、以下「登録情報」といいます。）に虚偽、誤記、または記入漏れがある者
+（２） 法人・団体
+第５条 （登録情報の管理）
+１IMTは、登録情報を厳重に管理するとともに、前条第２項の（１）から（６）までに掲げるものを個人情報保護関連法令、日本中央競馬会個人情報保護規則、IMTアプリ プライバシーポリシーに基づき個人情報として適切に取り扱うこととし、法令により開示を求められた場合または利用者が開示に同意した場合を除き、他者に開示しません。
+２IMTは、登録情報から利用者の属性の集計、分析を行い、個人が識別・特定できないように加工したうえで統計資料を作成し、新規サービスの開発等の業務の遂行のために利用することがあります。また、IMTは、統計資料を機密保持等の必要な措置を講じたうえで業務委託先等に提供することがあります。
+第６条（IMTからの通知）
+１IMTは、利用者に対し、本サービスの登録を完了した時から、本サービス上での掲載や通知機能または電子メールにより、必要な事項（サービスの告知・中央競馬の情報などを含みます。）を通知します。
+２IMTからの通知内容は、本サービス上に掲載した時点、通知機能により送信した時点または電子メールを送信した時点から効力を発するものとします。
+３利用者は、本サービス上での通知解除設定を行うことにより、第１項の通知を解除することができます。 ただし、本サービスの運営上重要な通知は、当該設定にかかわらず通知できるものとします。
+第７条（キャンペーン・アンケート等）
+１IMTは利用者に対して、サービスの一環として、キャンペーン・アンケート等を随時実施するものとし、IMTは、回答内容を本サービスの改善等のために利用するものとします。なお、IMTは、回答内容のうち登録情報に含まれる情報を、第５条第２項に準じて利用するものとします。
+第８条（サービス提供地域）
+１本サービスの提供地域は、日本国内に限るものとします。
+第９条 （他サービスとの連携）
+１利用者は、本サービスの連携機能により、IMTが提供する他のサービスおよび他者が提供するサービス（以下「他のサービス」と総称します。）を利用できます。なお、他のサービスの提供範囲は別に定めます。
+２利用者が本サービスの連携機能を利用して他のサービスを利用するときは、本規約と他のサービスの利用規約等を承諾のうえ、利用者自身の責任で利用するものとします。
+３他のサービスの内容と利用条件等は、それぞれ他のサービスが定めるところによります。
+４本サービスやその連携機能に何らかの不具合が生じたときは、利用者は、本サービスを介さずに他のサービスを利用するものとします。この場合において、本サービスやその連携機能の不具合に起因して利用者または第三者に損害が生じた場合であっても、IMTは一切の責任を負いません。
+第１０条（登録情報の変更）
+１利用者は登録情報に変更があった場合は、速やかにIMT所定の方法で変更手続きをするものとします。
+２変更手続きが行われなかったことで利用者に損害が生じた場合であっても、IMTは一切の責任を負いません。
+第１１条（利用者の責任）
+１利用者は、本サービスを利用（第９条の連携機能により他のサービスを利用する場合を含み、以下同様とします。）するうえでの登録情報の使用と管理について、一切の責任を負うものとします。
+２本サービスを利用してなされた一切の行為とその結果について、当該行為を自己がしたかどうかを問わず、当該利用者が責任を負うものとし、利用者または第三者に損害が生じた場合であっても、IMTは一切の責任を負いません。
+３利用者は、利用者として有する権利を第三者に譲渡、売買、名義変更、質権の設定その他の担保に供する等の行為はできないものとします。
+第１２条（情報の削除）
+１利用者が</mutableString>
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="13" name="HiraginoSans-W4"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="本サービスの画像保存機能に登録した画像データ等">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="13" name="HiraginoSans-W4"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <mutableString key="content">が、IMTが本サービスで定める所定の期間または容量を超えた場合、IMTは利用者に事前に通知することなく、当該データ等の一部または全部を削除することがあります。
+２本サービスの運営、保守管理上の理由から、利用者に事前に通知することなく、本サービスに蓄積された、文書、プログラム、データ等の一部または全部の情報について削除することがあります。　
+３IMTが前２項の措置をとったことにより、当該利用者または第三者に損害が生じた場合であっても、IMTは一切の責任を負いません。
+第１３条（利用登録の一時停止）
+１IMTは、以下のいずれかに該当した場合は、利用者の了承を得ることなく、当該利用者の登録情報の利用を停止することがあります。
+   （１） 登録されたメールアドレスによる連絡がとれない場合。
+（２） IMTが、緊急性が高いと認めた場合。
+２IMTが前項の措置をとったことで、利用者がサービスを利用できず、当該利用者または第三者に損害が生じた場合であっても、IMTは一切の責任を負いません。
+第１４条（その他の免責）
+１IMTは、本サービスの中断、追加、変更、削除などにより本サービスが提供できなかったこと、本サービスによる情報等の提供が遅れたこと、本サービスのプログラム・システム等のエラーその他本サービスの利用により利用者または第三者に損害が生じた場合であっても、IMTの予見の有無にかかわらず、一切の責任を負いません。
+２IMTは、利用者が使用するスマートフォン、タブレット等の端末の機種変更、回線・通信の障害、コンピュータウイルス感染等により利用者または第三者に損害が生じた場合であっても、IMTの予見の有無にかかわらず、一切の責任を負いません。
+３利用申込者が第４条第４項により利用の承認がされなかったことまたは利用者が第２１条により利用登録を取り消されたことにより本人または第三者が損害を被った場合であっても、IMTは一切の責任を負いません。
+４IMTは、本サービスに不具合が生じ、当該不具合の修補が必要であると認めたときは、不具合のないものを提供し、または当該不具合を修補するものとします。この場合、利用者には、必要に応じて、IMT所定のアプリケーションを再ダウンロードし、またはバージョンアップしていただくことがあります。なお、当該再ダウンロードまたはバージョンアップが完了するまでの間、本サービスを利用できない場合があります。
+第１５条（知的財産権）
+１IMTが本サービスで提供する情報・プログラムなど、本サービスに関連する全てのコンテンツの知的財産権（著作権、意匠権、特許権、実用新案権、商標権など）、肖像権、パブリシティ権その他一切の人格権および所有権その他の財産権は、IMTまたは当該権利を有する第三者に帰属するものとし、いかなる権利も、本サービスの利用が許諾されたことをもって利用者に移転するものではありません。
+２本サービスの利用を通じて利用者から提示された情報（知的財産権を含む。）の使用権はIMTに帰属するものとし、IMTはこれを無償で使用できるものとします。
+第１６条（私的利用の範囲外の利用禁止）
+１情報、動画、画像、楽曲、文章、発言、ソフトウェアその他利用者が本サービスを通じて入手したデータは、全てIMTの著作物として取り扱うものとし、利用者は、複製、改変、翻案、放送、有線送信、インターネット、編集、出版、上映、演奏、頒布、販売するなどいかなる方法によっても、著作権法で認められた私的利用の範囲を超えて、これらを使用したり公表したりすることができません。ただし、本サービスで提供する、SNSシェアボタンを利用してインターネット上に掲載する機能を利用する場合等、IMTが承認した場合はこの限りではありません。
+第１7条（その他の禁止行為）
+１利用者は、本サービスを利用するにあたり、前条（私的利用の範囲外の利用禁止）のほか、次の行為を禁止とします。
+（１）IMTもしくは他者の著作権、商標権等の知的財産権を侵害する行為、または侵害するおそれのある行為
+（２）他者の財産、プライバシーもしくは肖像権を侵害する行為、または侵害するおそれのある行為
+（３）本サービスを利用した営業活動、営利を目的とした行為、その準備を目的とした行為
+（４）犯罪に結びつく、または結びつくおそれのある行為
+（５）他者になりすまして本サービスを利用する行為
+（６）本サービスの運営など、IMTの業務を妨げるような行為
+（７）本サービスのシステムあるいはデータを損壊する行為
+（８）本サービスによりアクセス可能な情報を改ざん、消去する行為
+（９）有害なコンピュータプログラム等を送信し、または他者が受信可能な状態におく行為
+ （１０）理由の如何にかかわらず本サービスのシステムに悪影響を与えるような行為
+ （１１）理由の如何にかかわらず他の利用者の利用に著しい不便をあたえるような行為
+（ １２）上記各号の他、法令、本規約もしくは公序良俗に違反する行為、サービスの運営を妨害する行為、IMTの信用を毀損し、もしくはIMTの財産を侵害する行為、または第三者もしくはIMTに不利益を与える行為
+２利用者は、iPhone向けアプリ （以下「iPhoneアプリ」といいます。）を利用するにあたり、次の行為を禁止とします。
+（１）iPhoneアプリのリバースエンジニアリング等プログラムロジックを解析する行為
+（２）iPhoneアプリとサーバ間のインターフェースを解析する行為
+（３）iPhoneアプリ以外からiPhoneアプリ用サーバにアクセスする行為
+（４）iPhoneアプリを複製・改変する行為
+（５）iPhoneアプリにより取得したデータを他のプログラムで利用する行為
+３利用者は、Android向けアプリ（以下「Androidアプリ」といいます。）を利用するにあたり、次の行為を行わないものとします。
+ （１）Androidアプリのリバースエンジニアリング等プログラムロジックを解析する行為
+ （２）Androidアプリとサーバ間のインターフェースを解析する行為
+ （３）Androidアプリ以外からAndroidアプリ用サーバにアクセスする行為
+（４）Androidアプリを複製・改変する行為
+（５）Androidアプリにより取得したデータを他のプログラムで利用する行為
+第１８条（通信の秘密）
+１IMTは、利用者の通信の秘密を守るものとし、法令により開示を求められた場合または利用者が開示に同意した場合を除き、他者に開示しません。
+２ IMTは、利用者のサービス利用記録の集計、分析を行い、統計資料を作成し、新規サービスの開発等の業務の遂行のために利用することがあります。また、IMTは、統計資料を業務提携先等に提供することがあります。
+第１９条（損害賠償）
+１利用者が本サービスの利用を通じてIMTに損害を与えた場合、IMTは利用者に対し、損害賠償の請求を行うことができるものとします。
+２利用者とIMTとの間で紛争が生じた場合、双方誠意をもって協議することとしますが、それでもなお解決しない場合は、その訴額に応じて、東京簡易裁判所または東京地方裁判所を、利用者とIMTの専属的合意管轄裁判所と定めます。
+第２０条（利用登録の取消し）
+１利用者が利用登録を取り消したい場合は、IMT所定の方法にて手続するものとします。
+２IMTは、利用者が以下のいずれかに該当したときは、当該利用者の利用登録を取り消することができるものとします。
+（１）利用者が第4条第4項各号に該当することが判明したとき
+（２）利用者が最後に利用した日の翌日から起算して3年間本サービスを利用しないとき
+（３）利用者が第１6条または第１7条のいずれかに該当する行為をしたとき
+（４）IMTが利用者の死亡を知り得たとき
+（５）利用者からの登録情報の利用停止請求に基づき、IMTが当該利用者の登録情報を利用できなくなったとき
+第２１条（サービスの終了）
+１IMTは、利用者に事前に通知することなく、本サービスの全部または一部を終了することがあります。
+２前項により本サービスの全部または一部を終了した場合に、本サービスの終了により生じた利用者あるいは第三者の損害に対し、一切の責任を負いません。
+第２２条（準拠法）
+１本サービスと本規約に関する準拠法は、日本法が適用されるものとします。</mutableString>
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="13" name="HiraginoSans-W4"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="14" name="Times-Roman"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="13" name="HiraginoSans-W4"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="9.5" headIndent="37.850000000000001" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="13" name="HiraginoSans-W4"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="9.5" headIndent="37.850000000000001" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="15" name="Times-Roman"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="9.5" headIndent="37.850000000000001" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sXh-GW-UbB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="8VY-Eg-zeI"/>
+                <constraint firstItem="sXh-GW-UbB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="PaV-8X-pF3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sXh-GW-UbB" secondAttribute="bottom" constant="10" id="YMn-hj-IEG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sXh-GW-UbB" secondAttribute="trailing" constant="10" id="qBO-22-XT4"/>
+            </constraints>
+            <point key="canvasLocation" x="-103" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

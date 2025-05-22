@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveVC" customModule="IMT_TEST" customModuleProvider="target">
+            <connections>
+                <outlet property="stvContentView" destination="ux7-Sg-yfX" id="Zz3-WW-OU7"/>
+                <outlet property="svMainContent" destination="Meb-7w-0YY" id="Efh-xY-Vyr"/>
+                <outlet property="view" destination="hcH-f2-n3X" id="2be-Uu-Lyu"/>
+                <outlet property="webView" destination="K5q-h9-Rwv" id="Xti-rQ-3EM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hcH-f2-n3X">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ux7-Sg-yfX">
+                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Meb-7w-0YY">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="763"/>
+                            <subviews>
+                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5q-h9-Rwv">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="763"/>
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <wkWebViewConfiguration key="configuration">
+                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                        <wkPreferences key="preferences"/>
+                                    </wkWebViewConfiguration>
+                                </wkWebView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="K5q-h9-Rwv" secondAttribute="trailing" id="7Cz-6Z-FdY"/>
+                                <constraint firstItem="K5q-h9-Rwv" firstAttribute="top" secondItem="Meb-7w-0YY" secondAttribute="top" id="KcP-1V-H8Q"/>
+                                <constraint firstItem="K5q-h9-Rwv" firstAttribute="height" secondItem="Meb-7w-0YY" secondAttribute="height" priority="750" id="UJX-Vh-GrT"/>
+                                <constraint firstItem="K5q-h9-Rwv" firstAttribute="leading" secondItem="Meb-7w-0YY" secondAttribute="leading" id="cNV-mQ-hBB"/>
+                                <constraint firstItem="K5q-h9-Rwv" firstAttribute="width" secondItem="Meb-7w-0YY" secondAttribute="width" id="eoh-lS-C33"/>
+                                <constraint firstAttribute="bottom" secondItem="K5q-h9-Rwv" secondAttribute="bottom" id="nCm-J7-w0r"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Meb-7w-0YY" secondAttribute="trailing" id="DAD-P3-yeK"/>
+                        <constraint firstAttribute="bottom" secondItem="Meb-7w-0YY" secondAttribute="bottom" id="FUX-O0-1HO"/>
+                        <constraint firstItem="Meb-7w-0YY" firstAttribute="leading" secondItem="ux7-Sg-yfX" secondAttribute="leading" id="YUD-p2-DU4"/>
+                        <constraint firstItem="Meb-7w-0YY" firstAttribute="top" secondItem="ux7-Sg-yfX" secondAttribute="top" id="hE6-Yk-h24"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="428-J2-fAb"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ux7-Sg-yfX" firstAttribute="trailing" secondItem="428-J2-fAb" secondAttribute="trailing" id="IgB-ZH-fut"/>
+                <constraint firstItem="ux7-Sg-yfX" firstAttribute="top" secondItem="428-J2-fAb" secondAttribute="top" id="SNP-Ab-1ff"/>
+                <constraint firstItem="ux7-Sg-yfX" firstAttribute="bottom" secondItem="428-J2-fAb" secondAttribute="bottom" id="ZU2-wk-LuR"/>
+                <constraint firstItem="ux7-Sg-yfX" firstAttribute="leading" secondItem="428-J2-fAb" secondAttribute="leading" id="iuh-Lh-OdK"/>
+            </constraints>
+            <point key="canvasLocation" x="-1084.6153846153845" y="92.417061611374407"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideVC" customModule="IMT_iOS_DEV" customModuleProvider="target">
+            <connections>
+                <outlet property="btnNext" destination="Z8X-ht-a1O" id="bzA-jJ-76L"/>
+                <outlet property="clvStep" destination="dKZ-9m-VDv" id="poy-Yk-4KC"/>
+                <outlet property="cstHeightHeader" destination="R4c-VB-VYC" id="9hu-p4-8Ut"/>
+                <outlet property="lblStepTitle" destination="64M-xI-l6g" id="pR7-Xj-H4F"/>
+                <outlet property="pageStep" destination="KN5-WS-t5i" id="5S0-jA-LRR"/>
+                <outlet property="vHeader" destination="PWA-fW-Kah" id="68W-9T-Ddg"/>
+                <outlet property="view" destination="0bg-bb-jkL" id="iWG-Ub-VNb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0bg-bb-jkL">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnh-QQ-dmP">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWA-fW-Kah" userLabel="HeaderView" customClass="IMTView" customModule="IMT_iOS_DEV" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_guide_header" translatesAutoresizingMaskIntoConstraints="NO" id="wYE-ib-npt">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちは！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64M-xI-l6g" customClass="IMTLabel" customModule="IMT_iOS_DEV" customModuleProvider="target">
+                                    <rect key="frame" x="150" y="16.5" width="114" height="19"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="mediumWeight" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="largerSize" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="64M-xI-l6g" firstAttribute="centerX" secondItem="PWA-fW-Kah" secondAttribute="centerX" id="E7x-v5-ggs"/>
+                                <constraint firstAttribute="height" constant="52" id="R4c-VB-VYC"/>
+                                <constraint firstAttribute="trailing" secondItem="wYE-ib-npt" secondAttribute="trailing" id="ShX-do-R4p"/>
+                                <constraint firstItem="wYE-ib-npt" firstAttribute="top" secondItem="PWA-fW-Kah" secondAttribute="top" id="U1N-Ob-qJq"/>
+                                <constraint firstItem="64M-xI-l6g" firstAttribute="centerY" secondItem="PWA-fW-Kah" secondAttribute="centerY" id="sAT-lI-CIH"/>
+                                <constraint firstItem="wYE-ib-npt" firstAttribute="leading" secondItem="PWA-fW-Kah" secondAttribute="leading" id="t1G-Yx-e3b"/>
+                                <constraint firstAttribute="bottom" secondItem="wYE-ib-npt" secondAttribute="bottom" id="xBC-RY-0dz"/>
+                            </constraints>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dKZ-9m-VDv">
+                            <rect key="frame" x="0.0" y="52" width="414" height="844"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UYN-tQ-Koy">
+                                <size key="itemSize" width="0.0" height="0.0"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="KBi-ha-UR8"/>
+                                <outlet property="delegate" destination="-1" id="hcb-sa-nlV"/>
+                            </connections>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHy-52-Tw0">
+                            <rect key="frame" x="0.0" y="814" width="414" height="48"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8X-ht-a1O" customClass="IMTButton" customModule="IMT_iOS_DEV" customModuleProvider="target">
+                            <rect key="frame" x="325" y="823" width="53" height="24"/>
+                            <color key="backgroundColor" red="0.91764705882352937" green="0.396078431372549" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="53" id="D2c-qd-ANJ"/>
+                                <constraint firstAttribute="height" constant="24" id="dzD-8G-sPw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="次へ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="autoRadius" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="smallSize" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="normalWeight" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionNext:" destination="-1" eventType="touchUpInside" id="1l6-NB-7KD"/>
+                            </connections>
+                        </button>
+                        <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="KN5-WS-t5i">
+                            <rect key="frame" x="149" y="814" width="116" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="bEf-NJ-tBW"/>
+                            </constraints>
+                            <color key="pageIndicatorTintColor" red="0.83529411760000005" green="0.90588235289999997" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="currentPageIndicatorTintColor" red="0.6705882353" green="0.81176470590000005" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        </pageControl>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="rTw-Df-rfF"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dKZ-9m-VDv" firstAttribute="leading" secondItem="pnh-QQ-dmP" secondAttribute="leading" id="7wT-3X-GTI"/>
+                        <constraint firstItem="jHy-52-Tw0" firstAttribute="leading" secondItem="rTw-Df-rfF" secondAttribute="leading" id="KbY-hC-ylP"/>
+                        <constraint firstItem="rTw-Df-rfF" firstAttribute="bottom" secondItem="Z8X-ht-a1O" secondAttribute="bottom" constant="15" id="Mtb-fr-EUd"/>
+                        <constraint firstItem="PWA-fW-Kah" firstAttribute="centerX" secondItem="rTw-Df-rfF" secondAttribute="centerX" id="RF3-87-t5Q"/>
+                        <constraint firstItem="dKZ-9m-VDv" firstAttribute="top" secondItem="PWA-fW-Kah" secondAttribute="bottom" id="TVG-K1-9Wo"/>
+                        <constraint firstAttribute="bottom" secondItem="dKZ-9m-VDv" secondAttribute="bottom" id="VFb-2Q-yVh"/>
+                        <constraint firstItem="PWA-fW-Kah" firstAttribute="leading" secondItem="pnh-QQ-dmP" secondAttribute="leading" id="eOF-x7-he2"/>
+                        <constraint firstItem="PWA-fW-Kah" firstAttribute="top" secondItem="pnh-QQ-dmP" secondAttribute="top" id="fXd-nC-rwF"/>
+                        <constraint firstAttribute="trailing" secondItem="Z8X-ht-a1O" secondAttribute="trailing" constant="36" id="frr-Pf-pEd"/>
+                        <constraint firstAttribute="trailing" secondItem="jHy-52-Tw0" secondAttribute="trailing" id="gPu-dT-5bP"/>
+                        <constraint firstItem="KN5-WS-t5i" firstAttribute="centerX" secondItem="dKZ-9m-VDv" secondAttribute="centerX" id="o1i-Q0-LPH"/>
+                        <constraint firstItem="jHy-52-Tw0" firstAttribute="top" secondItem="KN5-WS-t5i" secondAttribute="top" id="p9S-kq-kgj"/>
+                        <constraint firstItem="rTw-Df-rfF" firstAttribute="bottom" secondItem="jHy-52-Tw0" secondAttribute="bottom" id="q3i-zG-Zaa"/>
+                        <constraint firstItem="KN5-WS-t5i" firstAttribute="centerY" secondItem="Z8X-ht-a1O" secondAttribute="centerY" id="wSi-Fe-51p"/>
+                        <constraint firstAttribute="trailing" secondItem="dKZ-9m-VDv" secondAttribute="trailing" id="x8q-DO-UiW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="manualRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="sxg-h0-zMG"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pnh-QQ-dmP" secondAttribute="bottom" id="1oE-lD-lA2"/>
+                <constraint firstItem="pnh-QQ-dmP" firstAttribute="leading" secondItem="sxg-h0-zMG" secondAttribute="leading" id="HkW-Pc-ZaG"/>
+                <constraint firstItem="sxg-h0-zMG" firstAttribute="trailing" secondItem="pnh-QQ-dmP" secondAttribute="trailing" id="uXz-jc-P5H"/>
+                <constraint firstItem="pnh-QQ-dmP" firstAttribute="top" secondItem="0bg-bb-jkL" secondAttribute="top" id="zom-zc-iIy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="168.11594202898553" y="140.625"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="64M-xI-l6g">
+            <size key="intrinsicContentSize" width="114" height="19"/>
+        </designable>
+        <designable name="Z8X-ht-a1O">
+            <size key="intrinsicContentSize" width="30" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="bg_guide_header" width="750" height="115"/>
+    </resources>
+</document>
